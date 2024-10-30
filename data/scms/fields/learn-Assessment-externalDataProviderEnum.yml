@@ -1,0 +1,7 @@
+name: externalDataProviderEnum
+label: ExternalDataProviderEnum
+widget: string
+options:
+  - Microsoft.Advisor
+required: false
+archivable: false

@@ -1,0 +1,119 @@
+name: Role
+label: Role
+description: A Learn role
+fields:
+  - name: certificationPaths
+    label: CertificationPaths
+    widget: list
+    fields:
+      - name: linkedInKeywords
+        label: LinkedInKeywords
+        widget: string
+        required: false
+        archivable: false
+      - name: prerequisites
+        label: Prerequisites
+        widget: list
+        fields:
+          - name: isOptional
+            label: IsOptional
+            required: false
+            archivable: false
+          - name: levels
+            label: Levels
+            widget: list
+            required: false
+            archivable: false
+          - name: uid
+            label: Uid
+            widget: relation
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: relation
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: certifications
+    label: Certifications
+    widget: list
+    fields:
+      - name: requiredExams
+        label: RequiredExams
+        widget: list
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: relation
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: resources
+    label: Resources
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: href
+        label: Href
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: subTitle
+    label: SubTitle
+    widget: string
+    required: true
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: string
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

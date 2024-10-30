@@ -1,0 +1,5 @@
+name: additionalContentCollection
+label: AdditionalContentCollection
+widget: list
+required: false
+archivable: false

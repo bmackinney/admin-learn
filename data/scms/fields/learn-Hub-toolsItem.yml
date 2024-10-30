@@ -1,0 +1,23 @@
+name: toolsItem
+label: ToolsItem
+widget: object
+fields:
+  - name: imageSrc
+    label: ImageSrc
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: url
+    label: Url
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+required: false
+archivable: false

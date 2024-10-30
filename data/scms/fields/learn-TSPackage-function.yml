@@ -1,0 +1,56 @@
+name: function
+label: Function
+widget: object
+fields:
+  - name: customDeprecatedMessage
+    label: CustomDeprecatedMessage
+    widget: markdown
+    required: false
+    archivable: false
+  - name: isDeprecated
+    label: IsDeprecated
+    required: false
+    archivable: false
+  - name: isPreview
+    label: IsPreview
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: package
+    label: Package
+    widget: relation
+    required: false
+    archivable: false
+  - name: previewState
+    label: PreviewState
+    widget: string
+    options:
+      - alpha
+      - beta
+    required: false
+    archivable: false
+  - name: remarks
+    label: Remarks
+    widget: markdown
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: true
+    archivable: false
+  - name: syntax
+    label: Syntax
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false
+required: false
+archivable: false

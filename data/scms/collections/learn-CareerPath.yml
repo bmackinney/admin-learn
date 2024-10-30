@@ -1,0 +1,69 @@
+name: CareerPath
+label: CareerPath
+description: The schema for Career Path pages
+fields:
+  - name: hero
+    label: Hero
+    widget: object
+    fields:
+      - name: backgroundImage
+        label: BackgroundImage
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: link
+        label: Link
+        widget: object
+        fields:
+          - name: text
+            label: Text
+            widget: string
+            required: false
+            archivable: false
+          - name: url
+            label: Url
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: levelPivots
+    label: LevelPivots
+    widget: list
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: string
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

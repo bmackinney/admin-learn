@@ -1,0 +1,105 @@
+name: Module
+label: Module
+description: A Guided Learning Module.
+fields:
+  - name: abstract
+    label: Abstract
+    widget: markdown
+    required: true
+    archivable: false
+  - name: achievement
+    label: Achievement
+    widget: relation
+    required: false
+    archivable: false
+  - name: badge
+    label: Badge
+    widget: object
+    fields:
+      - name: uid
+        label: Uid
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: hidden
+    label: Hidden
+    required: false
+    archivable: false
+  - name: iconUrl
+    label: IconUrl
+    widget: string
+    fieldType: url
+    required: true
+    archivable: false
+  - name: languages
+    label: Languages
+    widget: list
+    required: false
+    archivable: false
+  - name: levels
+    label: Levels
+    widget: list
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: prerequisites
+    label: Prerequisites
+    widget: markdown
+    required: false
+    archivable: false
+  - name: products
+    label: Products
+    widget: list
+    required: true
+    archivable: false
+  - name: ratingEnabled
+    label: RatingEnabled
+    required: false
+    archivable: false
+  - name: roles
+    label: Roles
+    widget: list
+    required: true
+    archivable: false
+  - name: subjects
+    label: Subjects
+    widget: list
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false
+  - name: units
+    label: Units
+    widget: list
+    required: true
+    archivable: false

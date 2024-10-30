@@ -1,0 +1,17 @@
+module:
+  imports:
+    - path: github.com/basa-casa/admin-hugo
+  mounts:
+    - source: static
+      target: static
+    - source: data
+      target: data
+    - source: admin
+      target: content/admin
+outputFormats:
+  plan:
+    basename: plan
+    mediatype: text/csv
+    notAlternative: false
+    isHTML: true
+    noUgly: true

@@ -1,0 +1,21 @@
+name: parameter
+label: Parameter
+widget: object
+fields:
+  - name: description
+    label: Description
+    widget: markdown
+    required: false
+    archivable: false
+  - name: id
+    label: Id
+    widget: string
+    required: false
+    archivable: false
+  - name: type
+    label: Type
+    widget: markdown
+    required: true
+    archivable: false
+required: false
+archivable: false

@@ -1,0 +1,88 @@
+name: Lifecycle
+label: Lifecycle
+description: Product Lifecycle schema
+fields:
+  - name: content
+    label: Content
+    widget: markdown
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: policyType
+    label: PolicyType
+    widget: string
+    options:
+      - fixed
+      - fixed-mainstream-only
+      - modern-online
+      - modern-on-prem
+      - component
+    required: true
+    archivable: false
+  - name: products
+    label: Products
+    widget: list
+    required: false
+    archivable: false
+  - name: releases
+    label: Releases
+    widget: list
+    fields:
+      - name: endDate
+        label: EndDate
+        required: false
+        archivable: false
+      - name: startDate
+        label: StartDate
+        required: false
+        archivable: false
+      - name: version
+        label: Version
+        widget: string
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: true
+    archivable: false
+  - name: supportDates
+    label: SupportDates
+    widget: object
+    fields:
+      - name: end
+        label: End
+        required: false
+        archivable: false
+      - name: extendedEnd
+        label: ExtendedEnd
+        required: false
+        archivable: false
+      - name: start
+        label: Start
+        required: false
+        archivable: false
+    required: false
+    archivable: false

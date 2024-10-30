@@ -1,0 +1,11 @@
+github.com/basa-casa/admin v0.0.0-20240930144826-b19580076627 h1:3wjLOB2jFvS5Gd7ydaqEh0q3HOuyLnn8qpxyz7fAGtg=
+github.com/basa-casa/admin v0.0.0-20240930144826-b19580076627/go.mod h1:Mi6LFhvTM3JEjgWBORr14C78t0TIecd07e9kTxVJYCg=
+github.com/basa-casa/admin v0.0.0-20241002191436-e25f3e332edc h1:8giZsrrA17XnmL3VKOfVqBUQ/io+HcFsuh+fQ01GtxY=
+github.com/basa-casa/admin v0.0.0-20241002191436-e25f3e332edc/go.mod h1:Mi6LFhvTM3JEjgWBORr14C78t0TIecd07e9kTxVJYCg=
+github.com/basa-casa/admin-hugo v0.0.0-20240930144926-40edcec19a1b h1:qJAg11RB2lcA6gIXR2Bmxlf2rEUlaR2abU8KZmWH6mo=
+github.com/basa-casa/admin-hugo v0.0.0-20240930144926-40edcec19a1b/go.mod h1:/wGkdhy2/6eHmsv14WhnVgxv4fX2IHSOOH6Om1LOies=
+github.com/basa-casa/admin-scms v0.0.0-20240928062126-b864c584e488 h1:j/4VbyyACU96XwOy81DYbvkhwCmJY45nI1JjYmsKE6w=
+github.com/basa-casa/admin-scms v0.0.0-20240928062126-b864c584e488/go.mod h1:wH67GcACY0NjAhhF9QuL0W/dnWuhGcpw19Pwwg4Guik=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v2 v2.4.0 h1:D8xgwECY7CYvx+Y2n4sBz93Jn9JRvxdiyyo8CTfuKaY=
+gopkg.in/yaml.v2 v2.4.0/go.mod h1:RDklbk79AGWmwhnvt/jBztapEOGDOx6ZbXqjP6csGnQ=

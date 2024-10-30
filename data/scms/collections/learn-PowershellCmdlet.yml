@@ -1,0 +1,203 @@
+name: PowershellCmdlet
+label: PowershellCmdlet
+description: The schema for powershell cmdlet page
+fields:
+  - name: applicable
+    label: Applicable
+    widget: list
+    required: false
+    archivable: false
+  - name: description
+    label: Description
+    widget: markdown
+    required: false
+    archivable: false
+  - name: examples
+    label: Examples
+    widget: list
+    fields:
+      - name: code
+        label: Code
+        widget: string
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: inputs
+    label: Inputs
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: markdown
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: links
+    label: Links
+    widget: list
+    fields:
+      - name: href
+        label: Href
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: text
+        label: Text
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: module
+    label: Module
+    widget: relation
+    required: true
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: notes
+    label: Notes
+    widget: markdown
+    required: false
+    archivable: false
+  - name: outputs
+    label: Outputs
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: markdown
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: parameters
+    label: Parameters
+    widget: list
+    fields:
+      - name: acceptWildcardCharacters
+        label: AcceptWildcardCharacters
+        required: false
+        archivable: false
+      - name: aliases
+        label: Aliases
+        widget: string
+        required: false
+        archivable: false
+      - name: applicable
+        label: Applicable
+        widget: list
+        required: false
+        archivable: false
+      - name: defaultValue
+        label: DefaultValue
+        widget: string
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: isRequired
+        label: IsRequired
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: parameterValueGroup
+        label: ParameterValueGroup
+        widget: string
+        required: false
+        archivable: false
+      - name: pipelineInput
+        label: PipelineInput
+        required: false
+        archivable: false
+      - name: position
+        label: Position
+        widget: string
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: false
+        archivable: false
+      - name: type
+        label: Type
+        widget: markdown
+        required: false
+        archivable: false
+      - name: valueFrom
+        label: ValueFrom
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: syntaxes
+    label: Syntaxes
+    widget: list
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

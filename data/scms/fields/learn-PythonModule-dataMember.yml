@@ -1,0 +1,26 @@
+name: dataMember
+label: DataMember
+widget: object
+fields:
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: signature
+    label: Signature
+    widget: string
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false
+required: false
+archivable: false

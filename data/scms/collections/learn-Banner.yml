@@ -1,0 +1,122 @@
+name: Banner
+label: Banner
+description: Banner Schema
+fields:
+  - name: banners
+    label: Banners
+    widget: list
+    fields:
+      - name: content
+        label: Content
+        widget: object
+        fields:
+          - name: imageUrl
+            label: ImageUrl
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+          - name: link
+            label: Link
+            widget: object
+            fields:
+              - name: href
+                label: Href
+                widget: string
+                fieldType: url
+                required: false
+                archivable: false
+              - name: title
+                label: Title
+                widget: string
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+          - name: text
+            label: Text
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: dismissable
+        label: Dismissable
+        required: false
+        archivable: false
+      - name: displayType
+        label: DisplayType
+        widget: string
+        options:
+          - event-card
+          - event-image-card
+        required: false
+        archivable: false
+      - name: location
+        label: Location
+        widget: string
+        options:
+          - global
+          - content
+          - sectional
+        required: false
+        archivable: false
+      - name: scope
+        label: Scope
+        widget: object
+        fields:
+          - name: accessLevels
+            label: AccessLevels
+            widget: list
+            required: false
+            archivable: false
+          - name: displayedEventEndDate
+            label: DisplayedEventEndDate
+            widget: string
+            required: false
+            archivable: false
+          - name: displayedEventStartDate
+            label: DisplayedEventStartDate
+            widget: string
+            required: false
+            archivable: false
+          - name: endDate
+            label: EndDate
+            widget: string
+            required: false
+            archivable: false
+          - name: locales
+            label: Locales
+            widget: list
+            required: false
+            archivable: false
+          - name: paths
+            label: Paths
+            widget: list
+            required: false
+            archivable: false
+          - name: startDate
+            label: StartDate
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: string
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false

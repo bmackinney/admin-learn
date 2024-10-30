@@ -1,0 +1,54 @@
+name: ContextObject
+label: ContextObject
+description: The schema for context object
+fields:
+  - name: azurePortalHostname
+    label: AzurePortalHostname
+    widget: string
+    required: false
+    archivable: false
+  - name: brand
+    label: Brand
+    widget: string
+    required: false
+    archivable: false
+  - name: breadcrumb_path
+    label: Breadcrumb_path
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: chromeless
+    label: Chromeless
+    required: false
+    archivable: false
+  - name: isolated
+    label: Isolated
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields: []
+    required: false
+    archivable: false
+  - name: reviewFeatures
+    label: ReviewFeatures
+    required: false
+    archivable: false
+  - name: searchScope
+    label: SearchScope
+    widget: list
+    required: false
+    archivable: false
+  - name: toc_rel
+    label: Toc_rel
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: uhfHeaderId
+    label: UhfHeaderId
+    widget: string
+    required: false
+    archivable: false

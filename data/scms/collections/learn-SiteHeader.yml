@@ -1,0 +1,116 @@
+name: SiteHeader
+label: SiteHeader
+description: SiteHeader schema
+fields:
+  - name: brandLink
+    label: BrandLink
+    widget: object
+    fields:
+      - name: biName
+        label: BiName
+        widget: string
+        required: false
+        archivable: false
+      - name: displayName
+        label: DisplayName
+        widget: string
+        required: false
+        archivable: false
+      - name: href
+        label: Href
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: featuredContent
+    label: FeaturedContent
+    widget: list
+    fields:
+      - name: biName
+        label: BiName
+        widget: string
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: href
+        label: Href
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: supertitle
+        label: Supertitle
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields: []
+    required: false
+    archivable: false
+  - name: navCategories
+    label: NavCategories
+    widget: list
+    fields:
+      - name: biName
+        label: BiName
+        widget: string
+        required: false
+        archivable: false
+      - name: panel
+        label: Panel
+        widget: object
+        fields:
+          - name: panelContent
+            label: PanelContent
+            required: false
+            archivable: false
+          - name: panelLink
+            label: PanelLink
+            widget: object
+            fields:
+              - name: biName
+                label: BiName
+                widget: string
+                required: false
+                archivable: false
+              - name: href
+                label: Href
+                widget: string
+                fieldType: url
+                required: false
+                archivable: false
+              - name: title
+                label: Title
+                widget: string
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: type
+    label: Type
+    required: true
+    archivable: false

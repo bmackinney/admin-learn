@@ -1,0 +1,4 @@
+title: Admin Microsoft Learn
+schemas:
+  - src/schemas
+  - https://learn.microsoft.com/static/ui/latest/schemas/schema_config.json

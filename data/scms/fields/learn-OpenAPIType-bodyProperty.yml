@@ -1,0 +1,59 @@
+name: bodyProperty
+label: BodyProperty
+widget: object
+fields:
+  - name: allowReserved
+    label: AllowReserved
+    required: false
+    archivable: false
+  - name: description
+    label: Description
+    widget: markdown
+    required: false
+    archivable: false
+  - name: format
+    label: Format
+    widget: string
+    required: false
+    archivable: false
+  - name: isAllOf
+    label: IsAllOf
+    required: false
+    archivable: false
+  - name: isAnyOf
+    label: IsAnyOf
+    required: false
+    archivable: false
+  - name: isNot
+    label: IsNot
+    required: false
+    archivable: false
+  - name: isNullable
+    label: IsNullable
+    required: false
+    archivable: false
+  - name: isOneOf
+    label: IsOneOf
+    required: false
+    archivable: false
+  - name: isRequired
+    label: IsRequired
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: pattern
+    label: Pattern
+    widget: string
+    required: false
+    archivable: false
+  - name: types
+    label: Types
+    widget: list
+    required: false
+    archivable: false
+required: false
+archivable: false

@@ -1,0 +1,151 @@
+name: Course
+label: Course
+description: A Learn instructor led course
+fields:
+  - name: courseNumber
+    label: CourseNumber
+    widget: string
+    required: true
+    archivable: false
+  - name: exams
+    label: Exams
+    widget: list
+    fields:
+      - name: uid
+        label: Uid
+        widget: relation
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: features
+    label: Features
+    widget: list
+    required: false
+    archivable: false
+  - name: hoursToComplete
+    label: HoursToComplete
+    widget: number
+    required: true
+    archivable: false
+  - name: iconUrl
+    label: IconUrl
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: learningPartnersLink
+    label: LearningPartnersLink
+    widget: string
+    fieldType: url
+    required: true
+    archivable: false
+  - name: levels
+    label: Levels
+    widget: list
+    required: true
+    archivable: false
+  - name: locales
+    label: Locales
+    widget: list
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: outlineSection
+    label: OutlineSection
+    widget: markdown
+    required: false
+    archivable: false
+  - name: prerequisitesSection
+    label: PrerequisitesSection
+    widget: markdown
+    required: false
+    archivable: false
+  - name: products
+    label: Products
+    widget: list
+    required: false
+    archivable: false
+  - name: recommendationList
+    label: RecommendationList
+    widget: list
+    required: false
+    archivable: false
+  - name: relatedCertifications
+    label: RelatedCertifications
+    widget: list
+    fields:
+      - name: uid
+        label: Uid
+        widget: relation
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: retirementDate
+    label: RetirementDate
+    widget: string
+    required: false
+    archivable: false
+  - name: roles
+    label: Roles
+    widget: list
+    required: true
+    archivable: false
+  - name: skillsGained
+    label: SkillsGained
+    widget: list
+    fields:
+      - name: skill
+        label: Skill
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: studyGuide
+    label: StudyGuide
+    widget: list
+    fields:
+      - name: uid
+        label: Uid
+        widget: relation
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: subjects
+    label: Subjects
+    widget: list
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

@@ -1,0 +1,5 @@
+name: links
+label: Links
+widget: list
+required: false
+archivable: false

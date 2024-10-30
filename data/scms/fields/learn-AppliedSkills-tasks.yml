@@ -1,0 +1,5 @@
+name: tasks
+label: Tasks
+widget: list
+required: true
+archivable: false

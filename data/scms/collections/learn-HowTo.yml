@@ -1,0 +1,45 @@
+name: HowTo
+label: HowTo
+description: The schema for how-to documents
+fields:
+  - name: introduction
+    label: Introduction
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: nextStep
+    label: NextStep
+    required: false
+    archivable: false
+  - name: prerequisites
+    label: Prerequisites
+    required: false
+    archivable: false
+  - name: procedureSection
+    label: ProcedureSection
+    required: true
+    archivable: false
+  - name: relatedContent
+    label: RelatedContent
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: false
+    archivable: false

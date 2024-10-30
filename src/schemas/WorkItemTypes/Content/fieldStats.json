@@ -1,0 +1,830 @@
+{
+  "Work Item Types": [
+    "Bug",
+    "Code Review Request",
+    "Code Review Response",
+    "Epic",
+    "Feature",
+    "Feedback Request",
+    "Feedback Response",
+    "Shared Steps",
+    "Task",
+    "Test Case",
+    "Test Plan",
+    "Test Suite",
+    "User Story",
+    "Issue",
+    "Shared Parameter",
+    "Backlog Work",
+    "Initiative",
+    "APEX",
+    "User Feedback",
+    "Key Result",
+    "Policheck Bug",
+    "Objective",
+    "Content Portfolio",
+    "Dependency Request"
+  ],
+  "Fields": {
+    "System": {
+      "IterationPath": "all",
+      "IterationId": "all",
+      "ExternalLinkCount": "all",
+      "IterationLevel7": "all",
+      "IterationLevel6": "all",
+      "IterationLevel5": "all",
+      "IterationLevel4": "all",
+      "IterationLevel3": "all",
+      "IterationLevel2": "all",
+      "IterationLevel1": "all",
+      "AreaLevel7": "all",
+      "AreaLevel6": "all",
+      "AreaLevel5": "all",
+      "AreaLevel4": "all",
+      "AreaLevel3": "all",
+      "AreaLevel2": "all",
+      "AreaLevel1": "all",
+      "TeamProject": "all",
+      "Parent": "all",
+      "RemoteLinkCount": "all",
+      "CommentCount": "all",
+      "HyperLinkCount": "all",
+      "AttachedFileCount": "all",
+      "NodeName": "all",
+      "AreaPath": "all",
+      "RevisedDate": "all",
+      "ChangedDate": "all",
+      "Id": "all",
+      "AreaId": "all",
+      "AuthorizedAs": "all",
+      "Title": "all",
+      "State": "all",
+      "AuthorizedDate": "all",
+      "Watermark": "all",
+      "Rev": "all",
+      "ChangedBy": "all",
+      "Reason": "all",
+      "AssignedTo": "all",
+      "WorkItemType": "all",
+      "CreatedDate": "all",
+      "CreatedBy": "all",
+      "Description": "all",
+      "History": "all",
+      "RelatedLinkCount": "all",
+      "Tags": "all",
+      "BoardColumn": "all",
+      "BoardColumnDone": "all",
+      "BoardLane": "all"
+    },
+    "Microsoft": {
+      "VSTS": {
+        "Scheduling": {
+          "StoryPoints": [
+            "Bug",
+            "Feature",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "User Feedback"
+          ],
+          "RemainingWork": [
+            "Bug",
+            "Task",
+            "Issue"
+          ],
+          "OriginalEstimate": [
+            "Bug",
+            "Task"
+          ],
+          "CompletedWork": [
+            "Bug",
+            "Task"
+          ],
+          "TargetDate": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "User Story",
+            "Backlog Work",
+            "Initiative",
+            "Dependency Request"
+          ],
+          "DueDate": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "User Story",
+            "Issue",
+            "Backlog Work"
+          ],
+          "StartDate": [
+            "Epic",
+            "Feature",
+            "Task",
+            "Test Plan",
+            "User Story",
+            "Backlog Work",
+            "Initiative"
+          ],
+          "Effort": [
+            "Epic",
+            "Feature"
+          ],
+          "FinishDate": [
+            "Task",
+            "Test Plan",
+            "User Story"
+          ],
+          "Size": [
+            "Dependency Request"
+          ]
+        },
+        "Common": {
+          "Activity": [
+            "Bug",
+            "Task",
+            "Issue"
+          ],
+          "StateChangeDate": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "Shared Steps",
+            "Task",
+            "Test Case",
+            "User Story",
+            "Issue",
+            "Shared Parameter",
+            "Backlog Work",
+            "Initiative",
+            "APEX",
+            "User Feedback",
+            "Key Result",
+            "Policheck Bug",
+            "Objective",
+            "Content Portfolio",
+            "Dependency Request"
+          ],
+          "ActivatedDate": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "Shared Steps",
+            "Task",
+            "Test Case",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "Initiative",
+            "APEX",
+            "User Feedback",
+            "Key Result",
+            "Policheck Bug",
+            "Objective",
+            "Content Portfolio",
+            "Dependency Request"
+          ],
+          "ActivatedBy": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "Shared Steps",
+            "Task",
+            "Test Case",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "Initiative",
+            "APEX",
+            "User Feedback",
+            "Key Result",
+            "Policheck Bug",
+            "Objective",
+            "Content Portfolio",
+            "Dependency Request"
+          ],
+          "ResolvedDate": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "Task",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "Initiative",
+            "APEX",
+            "User Feedback",
+            "Key Result",
+            "Policheck Bug",
+            "Objective",
+            "Content Portfolio",
+            "Dependency Request"
+          ],
+          "ResolvedBy": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "Task",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "Initiative",
+            "APEX",
+            "User Feedback",
+            "Key Result",
+            "Policheck Bug",
+            "Objective",
+            "Content Portfolio",
+            "Dependency Request"
+          ],
+          "ResolvedReason": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "User Story"
+          ],
+          "ClosedDate": [
+            "Bug",
+            "Code Review Request",
+            "Code Review Response",
+            "Epic",
+            "Feature",
+            "Feedback Request",
+            "Feedback Response",
+            "Shared Steps",
+            "Task",
+            "Test Case",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "Initiative",
+            "APEX",
+            "User Feedback",
+            "Key Result",
+            "Policheck Bug",
+            "Objective",
+            "Content Portfolio",
+            "Dependency Request"
+          ],
+          "ClosedBy": [
+            "Bug",
+            "Code Review Request",
+            "Code Review Response",
+            "Epic",
+            "Feature",
+            "Feedback Request",
+            "Feedback Response",
+            "Shared Steps",
+            "Task",
+            "Test Case",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "Initiative",
+            "APEX",
+            "User Feedback",
+            "Key Result",
+            "Policheck Bug",
+            "Objective",
+            "Content Portfolio",
+            "Dependency Request"
+          ],
+          "Priority": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "Shared Steps",
+            "Task",
+            "Test Case",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "User Feedback"
+          ],
+          "Severity": [
+            "Bug"
+          ],
+          "StackRank": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "Task",
+            "User Story",
+            "Issue",
+            "Backlog Work",
+            "Initiative",
+            "User Feedback",
+            "Objective",
+            "Content Portfolio",
+            "Dependency Request"
+          ],
+          "ValueArea": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "User Story"
+          ],
+          "AcceptanceCriteria": [
+            "Bug",
+            "Epic",
+            "Feature",
+            "User Story",
+            "Backlog Work"
+          ],
+          "StateCode": [
+            "Code Review Request",
+            "Code Review Response"
+          ],
+          "ReviewedBy": [
+            "Code Review Response"
+          ],
+          "Risk": [
+            "Epic",
+            "Feature",
+            "User Story"
+          ],
+          "BusinessValue": [
+            "Epic",
+            "Feature"
+          ],
+          "TimeCriticality": [
+            "Epic",
+            "Feature"
+          ],
+          "Issue": [
+            "Feature",
+            "Shared Steps"
+          ],
+          "Rating": [
+            "Feedback Response"
+          ]
+        },
+        "TCM": {
+          "SystemInfo": [
+            "Bug",
+            "Feedback Response"
+          ],
+          "ReproSteps": [
+            "Bug"
+          ],
+          "Steps": [
+            "Shared Steps",
+            "Test Case"
+          ],
+          "Parameters": [
+            "Shared Steps",
+            "Test Case",
+            "Shared Parameter"
+          ],
+          "AutomatedTestName": [
+            "Test Case"
+          ],
+          "AutomatedTestStorage": [
+            "Test Case"
+          ],
+          "AutomatedTestId": [
+            "Test Case"
+          ],
+          "AutomatedTestType": [
+            "Test Case"
+          ],
+          "LocalDataSource": [
+            "Test Case"
+          ],
+          "AutomationStatus": [
+            "Test Case"
+          ],
+          "TestSuiteTypeId": [
+            "Test Suite"
+          ],
+          "TestSuiteType": [
+            "Test Suite"
+          ],
+          "QueryText": [
+            "Test Suite"
+          ],
+          "TestSuiteAudit": [
+            "Test Suite"
+          ]
+        },
+        "Build": {
+          "IntegrationBuild": [
+            "Bug",
+            "Code Review Request",
+            "Code Review Response",
+            "Epic",
+            "Feature",
+            "Feedback Request",
+            "Feedback Response",
+            "Shared Steps",
+            "Task",
+            "Test Case",
+            "Test Plan",
+            "Test Suite",
+            "User Story",
+            "Issue",
+            "Shared Parameter"
+          ],
+          "FoundIn": [
+            "Bug"
+          ]
+        },
+        "CodeReview": {
+          "ClosingComment": [
+            "Code Review Request",
+            "Code Review Response"
+          ],
+          "ContextCode": [
+            "Code Review Request"
+          ],
+          "ContextType": [
+            "Code Review Request"
+          ],
+          "Context": [
+            "Code Review Request"
+          ],
+          "ContextOwner": [
+            "Code Review Request"
+          ],
+          "ClosedStatusCode": [
+            "Code Review Request",
+            "Code Review Response"
+          ],
+          "ClosedStatus": [
+            "Code Review Request",
+            "Code Review Response"
+          ],
+          "AcceptedDate": [
+            "Code Review Response"
+          ],
+          "AcceptedBy": [
+            "Code Review Response"
+          ]
+        },
+        "Feedback": {
+          "ApplicationType": [
+            "Feedback Request"
+          ],
+          "ApplicationStartInformation": [
+            "Feedback Request"
+          ],
+          "ApplicationLaunchInstructions": [
+            "Feedback Request"
+          ]
+        }
+      }
+    },
+    "Custom": {
+      "ReflectedWorkItemId": [
+        "Bug",
+        "Epic",
+        "Feature",
+        "Task",
+        "User Story"
+      ],
+      "PublishedDate": [
+        "Bug",
+        "Epic",
+        "Feature",
+        "User Story"
+      ],
+      "PublishedURL": [
+        "Bug",
+        "User Story",
+        "Initiative"
+      ],
+      "GitHubRepo": [
+        "Bug",
+        "User Story",
+        "User Feedback"
+      ],
+      "RiskAssessment": [
+        "Bug",
+        "Epic",
+        "Feature",
+        "User Story",
+        "Backlog Work",
+        "Initiative"
+      ],
+      "RiskAssessmentComment": [
+        "Bug",
+        "Epic",
+        "Feature",
+        "User Story",
+        "Backlog Work",
+        "Initiative"
+      ],
+      "BlockReason": [
+        "Bug",
+        "Epic",
+        "Feature",
+        "User Story",
+        "Backlog Work",
+        "Initiative"
+      ],
+      "SharedPlanningEpic": [
+        "Epic"
+      ],
+      "TeamPriority": [
+        "Epic"
+      ],
+      "TeamStackRank": [
+        "Epic"
+      ],
+      "EpicSize": [
+        "Epic"
+      ],
+      "SkillingPriority": [
+        "Epic"
+      ],
+      "CommitmentStatus": [
+        "Epic",
+        "Feature",
+        "Initiative"
+      ],
+      "Confidence": [
+        "Epic",
+        "Initiative",
+        "Dependency Request"
+      ],
+      "SuccessCriteria": [
+        "Epic"
+      ],
+      "RequestedTeams": [
+        "Epic",
+        "Initiative"
+      ],
+      "SkillingStackRank": [
+        "Epic",
+        "Initiative"
+      ],
+      "CurrentPhase": [
+        "Epic",
+        "Initiative"
+      ],
+      "EndPhase": [
+        "Epic",
+        "Initiative"
+      ],
+      "TypeofWork": [
+        "Epic",
+        "Dependency Request"
+      ],
+      "StrategicInitiativeAlignment": [
+        "Epic",
+        "Feature"
+      ],
+      "LinkstoDependencyRequests": [
+        "Epic"
+      ],
+      "PlanningCommitmentStatus": [
+        "Epic"
+      ],
+      "RolesNeeded": [
+        "Feature"
+      ],
+      "Portfolio": [
+        "Feature",
+        "User Story",
+        "Key Result",
+        "Objective",
+        "Content Portfolio"
+      ],
+      "Solution": [
+        "Feature",
+        "User Story"
+      ],
+      "TargetAudiences": [
+        "Feature",
+        "User Story"
+      ],
+      "Approver": [
+        "Feature",
+        "Initiative"
+      ],
+      "Modality": [
+        "Feature",
+        "User Story",
+        "User Feedback"
+      ],
+      "OPSModelPhase": [
+        "Feature"
+      ],
+      "Approved": [
+        "Feature",
+        "Backlog Work"
+      ],
+      "ResourcestoUse": [
+        "Feature"
+      ],
+      "StrategicAlignmentScore": [
+        "Feature",
+        "User Story"
+      ],
+      "ProposalTeam": [
+        "Feature",
+        "Backlog Work",
+        "Initiative"
+      ],
+      "ProposalType": [
+        "Feature",
+        "User Story"
+      ],
+      "ProposalPointofContact": [
+        "Feature",
+        "Backlog Work",
+        "Initiative"
+      ],
+      "BVSBusinessValue": [
+        "Feature",
+        "Initiative"
+      ],
+      "BVSBusinessValueNumeric": [
+        "Feature"
+      ],
+      "BVSOKREnablement": [
+        "Feature",
+        "Initiative"
+      ],
+      "BVSOKREnablementNumeric": [
+        "Feature"
+      ],
+      "BVSOKREnablementProofPoints": [
+        "Feature"
+      ],
+      "BVSScopeEstimate": [
+        "Feature"
+      ],
+      "BVSBusinessValueProofPoints": [
+        "Feature"
+      ],
+      "TeeShirtSize": [
+        "Feature"
+      ],
+      "ContentType": [
+        "User Story",
+        "User Feedback"
+      ],
+      "PrimaryRole": [
+        "User Story"
+      ],
+      "ResourceRole": [
+        "User Story"
+      ],
+      "ResourceType": [
+        "User Story"
+      ],
+      "ContentStrategyPM": [
+        "User Story"
+      ],
+      "ContentPM": [
+        "User Story"
+      ],
+      "ContentDevLead": [
+        "User Story"
+      ],
+      "ContributorSuccessLead": [
+        "User Story"
+      ],
+      "BusinessValueScore": [
+        "User Story",
+        "Initiative"
+      ],
+      "BVSUrgency": [
+        "User Story",
+        "Initiative"
+      ],
+      "BVSUrgencyNumeric": [
+        "User Story"
+      ],
+      "BVSUrgencyProofPoints": [
+        "User Story"
+      ],
+      "TechnicalCSAAlignment": [
+        "User Story"
+      ],
+      "WorkUnits": [
+        "User Story",
+        "Backlog Work"
+      ],
+      "WorkUnitsLabel": [
+        "User Story",
+        "Backlog Work"
+      ],
+      "SharedPlanningInitiative": [
+        "Initiative"
+      ],
+      "BusinessOutcome": [
+        "Initiative"
+      ],
+      "SkillingPriorityAlignment": [
+        "Initiative"
+      ],
+      "RequestedBy": [
+        "APEX"
+      ],
+      "ProductName": [
+        "APEX"
+      ],
+      "ProductID": [
+        "APEX"
+      ],
+      "ProductType": [
+        "APEX"
+      ],
+      "LifecycleStage": [
+        "APEX"
+      ],
+      "95b3c540-0c2b-4885-b44a-6de866585f3e": [
+        "APEX"
+      ],
+      "SignoffOwner": [
+        "APEX"
+      ],
+      "f08936be-b753-4ad9-aa5e-2965f64d7973": [
+        "APEX"
+      ],
+      "ArticleTitle": [
+        "User Feedback"
+      ],
+      "ServiceorProduct": [
+        "User Feedback"
+      ],
+      "SubserviceorTechnology": [
+        "User Feedback"
+      ],
+      "LiveUrl": [
+        "User Feedback"
+      ],
+      "GithubUrl": [
+        "User Feedback"
+      ],
+      "MSAuthor": [
+        "User Feedback"
+      ],
+      "GithubAuthor": [
+        "User Feedback"
+      ],
+      "FeedbackDate": [
+        "User Feedback"
+      ],
+      "FeedbackVerbatim": [
+        "User Feedback"
+      ],
+      "FeedbackReason": [
+        "User Feedback"
+      ],
+      "FeedbackVerbatimLength": [
+        "User Feedback"
+      ],
+      "TriagedBy": [
+        "User Feedback"
+      ],
+      "TriageComment": [
+        "User Feedback"
+      ],
+      "FeedbackId": [
+        "User Feedback"
+      ],
+      "Module": [
+        "User Feedback"
+      ],
+      "Unit": [
+        "User Feedback"
+      ],
+      "Locale": [
+        "User Feedback"
+      ],
+      "LocFileId": [
+        "User Feedback"
+      ],
+      "TranslationType": [
+        "User Feedback"
+      ],
+      "IsPageHelpful": [
+        "User Feedback"
+      ],
+      "LastPublished": [
+        "User Feedback"
+      ],
+      "LastReviewed": [
+        "User Feedback"
+      ],
+      "MSReviewer": [
+        "User Feedback"
+      ],
+      "MSCustom": [
+        "User Feedback"
+      ],
+      "Pageviews": [
+        "User Feedback"
+      ],
+      "TeamRequestingWork": [
+        "Dependency Request"
+      ],
+      "LinktoRootEpic": [
+        "Dependency Request"
+      ]
+    }
+  }
+}

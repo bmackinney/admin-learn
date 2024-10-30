@@ -1,0 +1,22 @@
+name: place
+label: Place
+widget: object
+fields:
+  - name: address
+    label: Address
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: false
+    archivable: false
+  - name: type
+    label: Type
+    widget: string
+    options:
+      - Place
+    required: false
+    archivable: false
+required: false
+archivable: false

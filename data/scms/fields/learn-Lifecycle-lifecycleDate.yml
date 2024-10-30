@@ -1,0 +1,5 @@
+name: lifecycleDate
+label: LifecycleDate
+widget: string
+required: false
+archivable: false

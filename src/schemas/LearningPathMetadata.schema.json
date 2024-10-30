@@ -1,0 +1,80 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "LearningPathMetadata.schema.json",
+  "title": "Module Index File",
+  "type": "object",
+  "properties": {
+    "### YamlMime": {
+      "type": "string",
+      "const": "Module",
+      "description": "Specifies to Microsoft Learn the type of YAML file and metadata to expect. Must be the first line of the YAML file."
+    },
+    "uid": {
+      "type": "string",
+      "pattern": "^[a-z0-9.-]+\\.[a-z0-9.-]+\\.[a-z0-9.-]+$",
+      "description": "A manually generated unique ID created by the author to differentiate modules and reference them when building learning paths. Must follow the specified format. Use lowercase only, even for product names."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the module that appears on the module card and landing page. Use sentence case only, except for the product name, which should be capitalized. Don't use a period at the end of the title."
+    },
+    "summary": {
+      "type": "string",
+      "description": "A brief summary describing what the module is about. Appears on the main module landing page. Use a period at the end of the summary."
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Module title. Use sentence case only, except for the product name, which should be capitalized. Don't use a period at the end of the title. This value is the most important metadata for SEO."
+        },
+        "description": {
+          "type": "string",
+          "description": "A description of the module. Used in site search and sometimes on a search engine results page for improved SEO. Use a period at the end of the description."
+        },
+        "ms.date": {
+          "type": "string",
+          "format": "date",
+          "description": "Indicates the last time the module was substantially edited or guaranteed fresh. Format: MM/DD/YYYY."
+        },
+        "author": {
+          "type": "string",
+          "description": "The author's GitHub alias. Identifies the author by GitHub ID in case there are questions about or problems with the content."
+        },
+        "ms.author": {
+          "type": "string",
+          "description": "The author's Microsoft alias, without '@microsoft.com'. Used for content reporting and BI."
+        },
+        "ms.topic": {
+          "type": "string",
+          "enum": [
+            "module-build-your-first",
+            "module-challenge-project",
+            "module-choose-best-product",
+            "module-guided-project",
+            "module-intro-to-product",
+            "module-standard-task-based",
+            "module"
+          ],
+          "description": "The type of module. If the module doesn't follow one of the specified module patterns, enter 'module' for the value."
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "ms.date",
+        "author",
+        "ms.author",
+        "ms.topic"
+      ]
+    }
+  },
+  "required": [
+    "### YamlMime",
+    "uid",
+    "title",
+    "summary",
+    "metadata"
+  ]
+}

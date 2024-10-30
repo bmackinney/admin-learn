@@ -1,0 +1,121 @@
+name: Marketing
+label: Marketing
+description: The schema for Marketing
+fields:
+  - name: brand
+    label: Brand
+    widget: string
+    options:
+      - aspnet
+      - azure
+      - dotnet
+      - dynamics
+      - fabric
+      - javascript
+      - m365
+      - ms-graph
+      - nuget
+      - office
+      - playfab
+      - power-apps
+      - power-automate
+      - power-bi
+      - power-pages
+      - power-platform
+      - power-virtual-agents
+      - project
+      - sales-copilot
+      - semantic-kernel
+      - sharepoint
+      - sql
+      - sql-server
+      - teams
+      - vs
+      - visual-studio
+      - windows
+      - workplace-analytics
+      - xamarin
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: sections
+    label: Sections
+    widget: list
+    types:
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+      - name: sections
+        label: Sections
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false

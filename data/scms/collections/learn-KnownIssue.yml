@@ -1,0 +1,71 @@
+name: KnownIssue
+label: KnownIssue
+description: The schema for KnownIssue
+fields:
+  - name: content
+    label: Content
+    widget: markdown
+    required: true
+    archivable: false
+  - name: createdDate
+    label: CreatedDate
+    widget: string
+    required: true
+    archivable: false
+  - name: lastUpdatedDate
+    label: LastUpdatedDate
+    widget: string
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: products
+    label: Products
+    widget: list
+    required: true
+    archivable: false
+  - name: publicReferenceIds
+    label: PublicReferenceIds
+    widget: list
+    required: false
+    archivable: false
+  - name: resolvedDate
+    label: ResolvedDate
+    widget: string
+    required: false
+    archivable: false
+  - name: status
+    label: Status
+    widget: string
+    options:
+      - Reported
+      - Investigating
+      - Confirmed
+      - Mitigated
+      - Resolved
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: versions
+    label: Versions
+    widget: list
+    required: false
+    archivable: false

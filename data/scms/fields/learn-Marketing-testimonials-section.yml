@@ -1,0 +1,38 @@
+name: testimonials-section
+label: Testimonials-section
+widget: object
+fields:
+  - name: backgroundImage
+    label: BackgroundImage
+    widget: object
+    fields:
+      - name: darkImageSrc
+        label: DarkImageSrc
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: lightImageSrc
+        label: LightImageSrc
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: cards
+    label: Cards
+    widget: list
+    required: false
+    archivable: false
+  - name: componentType
+    label: ComponentType
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+required: false
+archivable: false

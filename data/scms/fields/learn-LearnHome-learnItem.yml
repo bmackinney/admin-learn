@@ -1,0 +1,5 @@
+name: learnItem
+label: LearnItem
+widget: relation
+required: false
+archivable: false

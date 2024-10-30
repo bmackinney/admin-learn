@@ -1,0 +1,24 @@
+name: virtualLocation
+label: VirtualLocation
+widget: object
+fields:
+  - name: name
+    label: Name
+    widget: string
+    required: false
+    archivable: false
+  - name: type
+    label: Type
+    widget: string
+    options:
+      - VirtualLocation
+    required: false
+    archivable: false
+  - name: url
+    label: Url
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+required: false
+archivable: false

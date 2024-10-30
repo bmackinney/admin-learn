@@ -1,0 +1,24 @@
+name: obsoletion
+label: Obsoletion
+widget: object
+fields:
+  - name: reason
+    label: Reason
+    widget: string
+    required: false
+    archivable: false
+  - name: state
+    label: State
+    widget: string
+    options:
+      - pending
+      - removed
+    required: false
+    archivable: false
+  - name: version
+    label: Version
+    widget: string
+    required: false
+    archivable: false
+required: false
+archivable: false

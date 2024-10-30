@@ -1,0 +1,44 @@
+name: FeatureRollout
+label: FeatureRollout
+description: The schema for FeatureRollout
+fields:
+  - name: activeFeatures
+    label: ActiveFeatures
+    widget: list
+    fields:
+      - name: conditions
+        label: Conditions
+        widget: list
+        types:
+          - name: conditions
+            label: Conditions
+            required: false
+            archivable: false
+          - name: conditions
+            label: Conditions
+            required: false
+            archivable: false
+          - name: conditions
+            label: Conditions
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false

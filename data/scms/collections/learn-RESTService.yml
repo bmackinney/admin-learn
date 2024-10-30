@@ -1,0 +1,56 @@
+name: RESTService
+label: RESTService
+description: The schema for REST Service page
+fields:
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: operationGroups
+    label: OperationGroups
+    widget: list
+    fields:
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: true
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: relation
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: remarks
+    label: Remarks
+    widget: markdown
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

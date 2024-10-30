@@ -1,0 +1,16 @@
+name: typeSummary
+label: TypeSummary
+widget: object
+fields:
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: relation
+    required: false
+    archivable: false
+required: false
+archivable: false

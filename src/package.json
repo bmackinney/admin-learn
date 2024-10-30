@@ -1,0 +1,40 @@
+{
+  "name": "admin-learn-generator",
+  "version": "0.1.0",
+  "description": "Scripts to generate fields and collections for import to CMS pages.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "github.com/bmackinney/admin-learn"
+  },
+  "author": "bmackinney",
+  "license": "MIT",
+  "keywords": [
+    "UI",
+    "builder"
+  ],
+  "dependencies": {
+    "@apidevtools/json-schema-ref-parser": "^11.7.2",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "glob": "^11.0.0",
+    "js-yaml": "^4.1.0",
+    "json-stable-stringify": "^1.1.1",
+    "jsonschema": "^1.4.1",
+    "lodash": "^4.17.21",
+    "minimatch": "^10.0.1"
+  },
+  "scripts": {
+    "build": "npm run get-schemas && npm run get-taxonomies && npm run get-catalog && npm run bundle-schemas && npm run gen-collections",
+    "get-schemas": "node getSchemas.js",
+    "get-catalog": "node getCatalog.js",
+    "bundle-schemas": "node bundleSchemas.js",
+    "get-taxonomies": "node getTaxonomies.js",
+    "gen-collections": "node generateCollections.js",
+    "gen-wit-schemas": "node generateADOWorkItemTypeSchemas.js",
+    "analyze-wit": "node analyzeWorkItemTypeFields.js",
+    "compare-projects": "node compareFieldStats.js",
+    "gen-exampleSite": "node generateExampleSite.js",
+    "gen-tStats": "node translationStats.js"
+  }
+}

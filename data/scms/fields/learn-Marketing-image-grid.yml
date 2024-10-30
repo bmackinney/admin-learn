@@ -1,0 +1,45 @@
+name: image-grid
+label: Image-grid
+widget: object
+fields:
+  - name: backgroundColor
+    label: BackgroundColor
+    required: false
+    archivable: false
+  - name: blocks
+    label: Blocks
+    widget: list
+    required: false
+    archivable: false
+  - name: borderRadius
+    label: BorderRadius
+    required: false
+    archivable: false
+  - name: componentType
+    label: ComponentType
+    required: false
+    archivable: false
+  - name: layout
+    label: Layout
+    widget: string
+    options:
+      - default
+      - focal
+    required: false
+    archivable: false
+  - name: reverse
+    label: Reverse
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: string
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+required: false
+archivable: false

@@ -1,0 +1,5 @@
+name: module
+label: Module
+widget: relation
+required: false
+archivable: false

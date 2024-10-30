@@ -1,0 +1,79 @@
+name: ExamPricing
+label: ExamPricing
+description: Exam pricing schema
+fields:
+  - name: countries
+    label: Countries
+    widget: list
+    fields:
+      - name: countryCode
+        label: CountryCode
+        widget: string
+        required: false
+        archivable: false
+      - name: currencyCode
+        label: CurrencyCode
+        widget: string
+        required: false
+        archivable: false
+      - name: currencySymbol
+        label: CurrencySymbol
+        widget: string
+        required: false
+        archivable: false
+      - name: message
+        label: Message
+        widget: string
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: exams
+    label: Exams
+    widget: list
+    fields:
+      - name: availability
+        label: Availability
+        widget: list
+        fields:
+          - name: amount
+            label: Amount
+            widget: number
+            required: false
+            archivable: false
+          - name: countryCode
+            label: CountryCode
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: examType
+        label: ExamType
+        widget: string
+        required: false
+        archivable: false
+      - name: price
+        label: Price
+        widget: object
+        fields:
+          - name: amount
+            label: Amount
+            widget: number
+            required: false
+            archivable: false
+          - name: countryCode
+            label: CountryCode
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields: []
+    required: false
+    archivable: false

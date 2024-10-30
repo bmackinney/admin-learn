@@ -1,0 +1,35 @@
+name: navigation
+label: Navigation
+widget: object
+fields:
+  - name: alignment
+    label: Alignment
+    widget: string
+    options:
+      - left
+      - center
+    required: false
+    archivable: false
+  - name: backgroundColor
+    label: BackgroundColor
+    required: false
+    archivable: false
+  - name: blocks
+    label: Blocks
+    widget: list
+    required: false
+    archivable: false
+  - name: componentType
+    label: ComponentType
+    required: false
+    archivable: false
+  - name: size
+    label: Size
+    widget: string
+    options:
+      - medium
+      - large
+    required: false
+    archivable: false
+required: false
+archivable: false

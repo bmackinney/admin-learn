@@ -1,0 +1,21 @@
+name: productDirectoryWithSections
+label: ProductDirectoryWithSections
+widget: object
+fields:
+  - name: sections
+    label: Sections
+    widget: list
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: string
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+required: false
+archivable: false

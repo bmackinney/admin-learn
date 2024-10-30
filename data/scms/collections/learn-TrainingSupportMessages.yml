@@ -1,0 +1,26 @@
+name: TrainingSupportMessages
+label: TrainingSupportMessages
+description: >-
+  Schema for training support messages, which are displayed at the bottom of
+  module unit pages
+fields:
+  - name: messages
+    label: Messages
+    widget: list
+    fields:
+      - name: detailedItems
+        label: DetailedItems
+        widget: list
+        required: false
+        archivable: false
+      - name: paragraph
+        label: Paragraph
+        required: false
+        archivable: false
+      - name: trainingUids
+        label: TrainingUids
+        widget: list
+        required: false
+        archivable: false
+    required: true
+    archivable: false

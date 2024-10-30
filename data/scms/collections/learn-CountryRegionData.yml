@@ -1,0 +1,46 @@
+name: CountryRegionData
+label: CountryRegionData
+description: The schema for CountryRegionData
+fields:
+  - name: countries
+    label: Countries
+    widget: list
+    fields:
+      - name: ISOAlpha2Code
+        label: ISOAlpha2Code
+        widget: string
+        required: false
+        archivable: false
+      - name: ISOAlpha3Code
+        label: ISOAlpha3Code
+        widget: string
+        required: false
+        archivable: false
+      - name: displayName
+        label: DisplayName
+        widget: string
+        required: false
+        archivable: false
+      - name: phoneCountryCode
+        label: PhoneCountryCode
+        widget: number
+        required: false
+        archivable: false
+      - name: statesOrProvinces
+        label: StatesOrProvinces
+        widget: list
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false

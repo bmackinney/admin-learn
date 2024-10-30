@@ -1,0 +1,5 @@
+name: scoreOf
+label: ScoreOf
+widget: list
+required: false
+archivable: false

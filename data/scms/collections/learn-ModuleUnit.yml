@@ -1,0 +1,81 @@
+name: ModuleUnit
+label: ModuleUnit
+description: A Guided Learning Module Unit.
+fields:
+  - name: azureSandbox
+    label: AzureSandbox
+    required: false
+    archivable: false
+  - name: content
+    label: Content
+    widget: markdown
+    required: false
+    archivable: false
+  - name: durationInMinutes
+    label: DurationInMinutes
+    widget: number
+    required: true
+    archivable: false
+  - name: interactive
+    label: Interactive
+    widget: string
+    options:
+      - bash
+      - bash-editor
+      - csharp
+      - powershell
+      - powershell-editor
+    required: false
+    archivable: false
+  - name: labId
+    label: LabId
+    required: false
+    archivable: false
+  - name: labModal
+    label: LabModal
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: notebook
+    label: Notebook
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: quiz
+    label: Quiz
+    required: false
+    archivable: false
+  - name: sandbox
+    label: Sandbox
+    required: false
+    archivable: false
+  - name: tasks
+    label: Tasks
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

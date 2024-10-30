@@ -1,0 +1,5 @@
+name: resources
+label: Resources
+widget: list
+required: true
+archivable: false

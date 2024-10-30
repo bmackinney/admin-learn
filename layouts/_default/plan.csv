@@ -1,0 +1,5 @@
+{{- $sep := "," -}}
+ID{{ $sep }}Work Item Type{{ $sep }}Title 1{{ $sep }}Title 2{{ $sep }}Title 3{{ $sep }}Description{{ $sep }}Acceptance Criteria{{ $sep }}Target date{{ $sep }}Start date{{ $sep }}Modality{{ $sep }}Resource Type{{ $sep }}Proposal Type{{ $sep }}Story Points{{ $sep }}Work Units
+{{ range .Site.GetPage "section" "plans" }}
+{{ .Params.id }}{{ $sep }}{{ .Params.workItemType }}{{ $sep }}{{ .Params.title1 }}{{ $sep }}{{ .Params.title2 }}{{ $sep }}{{ .Params.title3 }}{{ $sep }}{{ .Content | markdownify | plainify }}{{ $sep }}{{ .Params.acceptanceCriteria | markdownify | plainify }}{{ $sep }}{{ .Params.targetDate }}{{ $sep }}{{ .Params.startDate }}{{ $sep }}{{ .Params.modality }}{{ $sep }}{{ .Params.resourceType }}{{ $sep }}{{ .Params.proposalType }}{{ $sep }}{{ .Params.storyPoints }}{{ $sep }}{{ .Params.workUnits }}
+{{ end }}

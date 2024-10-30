@@ -1,0 +1,57 @@
+name: response
+label: Response
+widget: object
+fields:
+  - name: isDynamic
+    label: IsDynamic
+    required: false
+    archivable: false
+  - name: properties
+    label: Properties
+    widget: list
+    fields:
+      - name: name
+        label: Name
+        widget: string
+        required: false
+        archivable: false
+      - name: path
+        label: Path
+        widget: string
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: true
+        archivable: false
+      - name: type
+        label: Type
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: singleSchema
+    label: SingleSchema
+    widget: object
+    fields:
+      - name: name
+        label: Name
+        widget: string
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: true
+        archivable: false
+      - name: type
+        label: Type
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+required: false
+archivable: false

@@ -1,0 +1,471 @@
+name: Assessment
+label: Assessment
+description: Assessment
+fields:
+  - name: categories
+    label: Categories
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: id
+        label: Id
+        widget: string
+        required: true
+        archivable: false
+      - name: isRequired
+        label: IsRequired
+        required: false
+        archivable: false
+      - name: questions
+        label: Questions
+        widget: list
+        fields:
+          - name: allOf
+            label: AllOf
+            widget: list
+            required: false
+            archivable: false
+          - name: anyOf
+            label: AnyOf
+            widget: list
+            required: false
+            archivable: false
+          - name: choices
+            label: Choices
+            widget: list
+            fields:
+              - name: description
+                label: Description
+                widget: string
+                required: false
+                archivable: false
+              - name: id
+                label: Id
+                widget: string
+                required: true
+                archivable: false
+              - name: imageUrl
+                label: ImageUrl
+                widget: string
+                fieldType: url
+                required: false
+                archivable: false
+              - name: score
+                label: Score
+                widget: object
+                fields:
+                  - name: tag
+                    label: Tag
+                    widget: string
+                    required: false
+                    archivable: false
+                  - name: value
+                    label: Value
+                    widget: number
+                    required: false
+                    archivable: false
+                required: false
+                archivable: false
+              - name: text
+                label: Text
+                widget: string
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: id
+            label: Id
+            widget: string
+            required: true
+            archivable: false
+          - name: isRequired
+            label: IsRequired
+            required: false
+            archivable: false
+          - name: noneOf
+            label: NoneOf
+            widget: list
+            required: false
+            archivable: false
+          - name: rows
+            label: Rows
+            widget: list
+            fields:
+              - name: id
+                label: Id
+                widget: string
+                required: true
+                archivable: false
+              - name: text
+                label: Text
+                widget: string
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+          - name: title
+            label: Title
+            widget: string
+            required: true
+            archivable: false
+          - name: type
+            label: Type
+            widget: string
+            options:
+              - singleSelect
+              - multiSelect
+              - matrix
+              - singleSelectImage
+            required: false
+            archivable: false
+          - name: video
+            label: Video
+            widget: object
+            fields:
+              - name: title
+                label: Title
+                widget: string
+                required: true
+                archivable: false
+              - name: url
+                label: Url
+                widget: string
+                fieldType: url
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: description
+    label: Description
+    widget: string
+    required: false
+    archivable: false
+  - name: guidance
+    label: Guidance
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: nextSteps
+        label: NextSteps
+        widget: object
+        fields:
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: steps
+            label: Steps
+            widget: list
+            fields:
+              - name: allOf
+                label: AllOf
+                required: false
+                archivable: false
+              - name: anyOf
+                label: AnyOf
+                required: false
+                archivable: false
+              - name: description
+                label: Description
+                widget: string
+                required: false
+                archivable: false
+              - name: links
+                label: Links
+                widget: list
+                fields:
+                  - name: text
+                    label: Text
+                    widget: string
+                    required: false
+                    archivable: false
+                  - name: url
+                    label: Url
+                    widget: string
+                    fieldType: url
+                    required: false
+                    archivable: false
+                required: false
+                archivable: false
+              - name: noneOf
+                label: NoneOf
+                required: false
+                archivable: false
+              - name: scoreOf
+                label: ScoreOf
+                required: false
+                archivable: false
+              - name: title
+                label: Title
+                widget: string
+                required: true
+                archivable: false
+            required: false
+            archivable: false
+          - name: title
+            label: Title
+            widget: string
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+      - name: providers
+        label: Providers
+        widget: list
+        fields:
+          - name: advisorCategories
+            label: AdvisorCategories
+            widget: list
+            fields:
+              - name: assessmentCategoryId
+                label: AssessmentCategoryId
+                widget: string
+                required: false
+                archivable: false
+              - name: id
+                label: Id
+                widget: string
+                options:
+                  - HighAvailability
+                  - Cost
+                  - OperationalExcellence
+                  - Performance
+                  - Security
+                required: true
+                archivable: false
+              - name: severities
+                label: Severities
+                widget: list
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: recommendation
+        label: Recommendation
+        widget: object
+        fields:
+          - name: categories
+            label: Categories
+            widget: list
+            fields:
+              - name: allOf
+                label: AllOf
+                required: false
+                archivable: false
+              - name: anyOf
+                label: AnyOf
+                required: false
+                archivable: false
+              - name: description
+                label: Description
+                widget: string
+                required: false
+                archivable: false
+              - name: iconUrl
+                label: IconUrl
+                widget: string
+                fieldType: url
+                required: false
+                archivable: false
+              - name: id
+                label: Id
+                widget: string
+                required: true
+                archivable: false
+              - name: links
+                label: Links
+                widget: list
+                fields:
+                  - name: allOf
+                    label: AllOf
+                    required: false
+                    archivable: false
+                  - name: anyOf
+                    label: AnyOf
+                    required: false
+                    archivable: false
+                  - name: context
+                    label: Context
+                    widget: string
+                    required: false
+                    archivable: false
+                  - name: noneOf
+                    label: NoneOf
+                    required: false
+                    archivable: false
+                  - name: notes
+                    label: Notes
+                    widget: string
+                    required: false
+                    archivable: false
+                  - name: priority
+                    label: Priority
+                    widget: number
+                    required: false
+                    archivable: false
+                  - name: reportingCategory
+                    label: ReportingCategory
+                    widget: string
+                    required: false
+                    archivable: false
+                  - name: reportingSubCategory
+                    label: ReportingSubCategory
+                    widget: string
+                    required: false
+                    archivable: false
+                  - name: scoreOf
+                    label: ScoreOf
+                    required: false
+                    archivable: false
+                  - name: status
+                    label: Status
+                    widget: string
+                    options:
+                      - notStarted|inProgress|completed
+                    required: false
+                    archivable: false
+                  - name: text
+                    label: Text
+                    widget: string
+                    required: false
+                    archivable: false
+                  - name: uid
+                    label: Uid
+                    widget: string
+                    required: false
+                    archivable: false
+                  - name: url
+                    label: Url
+                    widget: string
+                    fieldType: url
+                    required: false
+                    archivable: false
+                required: false
+                archivable: false
+              - name: noneOf
+                label: NoneOf
+                required: false
+                archivable: false
+              - name: scoreOf
+                label: ScoreOf
+                required: false
+                archivable: false
+              - name: title
+                label: Title
+                widget: string
+                required: true
+                archivable: false
+            required: true
+            archivable: false
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: title
+            label: Title
+            widget: string
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+      - name: scoring
+        label: Scoring
+        widget: object
+        fields:
+          - name: calculationType
+            label: CalculationType
+            widget: string
+            options:
+              - sum
+              - average
+            required: false
+            archivable: false
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: scoresVerbage
+            label: ScoresVerbage
+            widget: string
+            options:
+              - Critical|Moderate|Excellent
+            required: false
+            archivable: false
+          - name: title
+            label: Title
+            widget: string
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: id
+    label: Id
+    widget: string
+    required: true
+    archivable: false
+  - name: locale
+    label: Locale
+    widget: string
+    options:
+      - en-us
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields: []
+    required: false
+    archivable: false
+  - name: providers
+    label: Providers
+    widget: list
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: version
+    label: Version
+    widget: string
+    required: true
+    archivable: false

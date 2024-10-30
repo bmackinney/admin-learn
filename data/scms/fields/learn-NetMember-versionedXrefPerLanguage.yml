@@ -1,0 +1,32 @@
+name: versionedXrefPerLanguage
+label: VersionedXrefPerLanguage
+widget: object
+fields:
+  - name: monikers
+    label: Monikers
+    widget: list
+    required: false
+    archivable: false
+  - name: value
+    label: Value
+    widget: relation
+    required: false
+    archivable: false
+  - name: valuePerLanguage
+    label: ValuePerLanguage
+    widget: list
+    fields:
+      - name: langs
+        label: Langs
+        widget: list
+        required: false
+        archivable: false
+      - name: value
+        label: Value
+        widget: relation
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+required: false
+archivable: false

@@ -1,0 +1,11 @@
+name: highlightedContentWithoutSections
+label: HighlightedContentWithoutSections
+widget: object
+fields:
+  - name: items
+    label: Items
+    widget: list
+    required: false
+    archivable: false
+required: false
+archivable: false

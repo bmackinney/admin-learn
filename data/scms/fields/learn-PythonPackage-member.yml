@@ -1,0 +1,88 @@
+name: member
+label: Member
+widget: object
+fields:
+  - name: examples
+    label: Examples
+    widget: list
+    required: false
+    archivable: false
+  - name: exceptions
+    label: Exceptions
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: type
+        label: Type
+        widget: relation
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: keywordOnlyParameters
+    label: KeywordOnlyParameters
+    widget: list
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: parameters
+    label: Parameters
+    widget: list
+    required: false
+    archivable: false
+  - name: positionalOnlyParameters
+    label: PositionalOnlyParameters
+    widget: list
+    required: false
+    archivable: false
+  - name: remarks
+    label: Remarks
+    widget: markdown
+    required: false
+    archivable: false
+  - name: return
+    label: Return
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: types
+        label: Types
+        widget: list
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: seeAlsoContent
+    label: SeeAlsoContent
+    widget: markdown
+    required: false
+    archivable: false
+  - name: signature
+    label: Signature
+    widget: string
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false
+required: false
+archivable: false

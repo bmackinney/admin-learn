@@ -1,0 +1,21 @@
+name: typeWithMoniker
+label: TypeWithMoniker
+widget: object
+fields:
+  - name: crossInheritdocsUid
+    label: CrossInheritdocsUid
+    widget: relation
+    required: false
+    archivable: false
+  - name: monikers
+    label: Monikers
+    widget: list
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: relation
+    required: true
+    archivable: false
+required: false
+archivable: false

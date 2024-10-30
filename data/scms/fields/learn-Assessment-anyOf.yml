@@ -1,0 +1,5 @@
+name: anyOf
+label: AnyOf
+widget: list
+required: false
+archivable: false

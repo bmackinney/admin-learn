@@ -1,0 +1,30 @@
+name: operation
+label: Operation
+widget: object
+fields:
+  - name: name
+    label: Name
+    widget: string
+    required: false
+    archivable: false
+  - name: operationId
+    label: OperationId
+    widget: string
+    required: false
+    archivable: false
+  - name: parameters
+    label: Parameters
+    widget: list
+    required: false
+    archivable: false
+  - name: response
+    label: Response
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: true
+    archivable: false
+required: false
+archivable: false

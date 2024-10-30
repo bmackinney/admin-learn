@@ -1,0 +1,65 @@
+name: Monikers
+label: Monikers
+description: >-
+  The schema of monikers. Changes in this file should be approved by Build
+  Transform Squad. For more details, please refer to
+  https://review.learn.microsoft.com/en-us/help/onboard/versions-monikers?branch=main
+fields:
+  - name: products
+    label: Products
+    widget: list
+    fields:
+      - name: familyName
+        label: FamilyName
+        widget: string
+        required: false
+        archivable: false
+      - name: monikers
+        label: Monikers
+        widget: list
+        fields:
+          - name: isDeprecated
+            label: IsDeprecated
+            required: false
+            archivable: false
+          - name: isPrerelease
+            label: IsPrerelease
+            required: false
+            archivable: false
+          - name: label
+            label: Label
+            widget: string
+            options:
+              - Latest
+              - Preview
+            required: false
+            archivable: false
+          - name: monikerDisplayName
+            label: MonikerDisplayName
+            widget: string
+            required: false
+            archivable: false
+          - name: monikerName
+            label: MonikerName
+            widget: string
+            required: false
+            archivable: false
+          - name: platform
+            label: Platform
+            widget: string
+            required: false
+            archivable: false
+          - name: versionDisplayName
+            label: VersionDisplayName
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: productName
+        label: ProductName
+        widget: string
+        required: false
+        archivable: false
+    required: true
+    archivable: false

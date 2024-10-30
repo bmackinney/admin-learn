@@ -1,0 +1,31 @@
+name: address
+label: Address
+widget: object
+fields:
+  - name: addressCountry
+    label: AddressCountry
+    widget: string
+    required: false
+    archivable: false
+  - name: addressLocality
+    label: AddressLocality
+    widget: string
+    required: false
+    archivable: false
+  - name: addressRegion
+    label: AddressRegion
+    widget: string
+    required: false
+    archivable: false
+  - name: postalCode
+    label: PostalCode
+    widget: string
+    required: false
+    archivable: false
+  - name: streetAddress
+    label: StreetAddress
+    widget: string
+    required: false
+    archivable: false
+required: false
+archivable: false

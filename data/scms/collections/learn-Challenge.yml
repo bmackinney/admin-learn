@@ -1,0 +1,98 @@
+name: Challenge
+label: Challenge
+description: The schema for a Challenge page
+fields:
+  - name: collectionSoloFaqs
+    label: CollectionSoloFaqs
+    widget: list
+    required: true
+    archivable: false
+  - name: collectionTeamsFaqs
+    label: CollectionTeamsFaqs
+    widget: list
+    required: false
+    archivable: false
+  - name: howItWorks
+    label: HowItWorks
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: section
+        label: Section
+        widget: list
+        fields:
+          - name: category
+            label: Category
+            widget: string
+            options:
+              - private
+              - public
+            required: false
+            archivable: false
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: title
+            label: Title
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: kind
+    label: Kind
+    widget: string
+    options:
+      - challenge
+      - new-challenge
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: personalChallengeFaqs
+    label: PersonalChallengeFaqs
+    widget: list
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: string
+    required: false
+    archivable: false
+  - name: xpSoloFaqs
+    label: XpSoloFaqs
+    widget: list
+    required: false
+    archivable: false
+  - name: xpTeamsFaqs
+    label: XpTeamsFaqs
+    widget: list
+    required: false
+    archivable: false

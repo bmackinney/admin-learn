@@ -1,0 +1,17 @@
+{
+  "name": "admin-learn",
+"image": "mcr.microsoft.com/devcontainers/base:ubuntu",  
+"features": {
+  "ghcr.io/devcontainers/features/hugo:1": {
+    "extended": true
+  },
+"customizations": {
+  "vscode": {
+    "extensions": [
+      "ms-python.python",
+      "esbenp.prettier-vscode"
+    ]
+  }
+}
+}
+}

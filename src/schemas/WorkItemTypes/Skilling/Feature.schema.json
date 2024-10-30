@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Feature",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer",
+      "description": "The unique identifier for the work item"
+    },
+    "rev": {
+      "type": "integer",
+      "description": "The revision number of the work item"
+    },
+    "WorkItemType": {
+      "type": "string",
+      "description": "The type of the work item"
+    },
+    "Title": {
+      "type": "string",
+      "description": "The first title of the work item"
+    },
+    "Description": {
+      "type": "string",
+      "description": "The description of the work item"
+    },
+    "AssignedTo": {
+      "type": "string",
+      "description": "The person assigned to the work item"
+    },
+    "AcceptanceCriteria": {
+      "type": "string",
+      "description": "The acceptance criteria for the work item"
+    },
+    "TargetDate": {
+      "type": "string",
+      "description": "The target date for the work item"
+    }
+  },
+  "required": [
+    "Title",
+    "WorkItemType"
+  ]
+}

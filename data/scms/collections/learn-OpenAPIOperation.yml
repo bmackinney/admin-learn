@@ -1,0 +1,279 @@
+name: OpenAPIOperation
+label: OpenAPIOperation
+description: The schema for OpenAPI Operation page
+fields:
+  - name: apiVersion
+    label: ApiVersion
+    widget: string
+    required: true
+    archivable: false
+  - name: callbacks
+    label: Callbacks
+    widget: list
+    fields:
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: operations
+        label: Operations
+        widget: list
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: description
+    label: Description
+    widget: markdown
+    required: false
+    archivable: false
+  - name: groupName
+    label: GroupName
+    widget: string
+    required: false
+    archivable: false
+  - name: httpVerb
+    label: HttpVerb
+    widget: string
+    options:
+      - GET
+      - HEAD
+      - POST
+      - PUT
+      - DELETE
+      - CONNECT
+      - OPTIONS
+      - TRACE
+      - PATCH
+    required: false
+    archivable: false
+  - name: isDeprecated
+    label: IsDeprecated
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: parameters
+    label: Parameters
+    widget: list
+    required: false
+    archivable: false
+  - name: paths
+    label: Paths
+    widget: list
+    fields:
+      - name: content
+        label: Content
+        widget: string
+        required: false
+        archivable: false
+      - name: isOptional
+        label: IsOptional
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: requestBody
+    label: RequestBody
+    widget: object
+    fields:
+      - name: bodies
+        label: Bodies
+        widget: list
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: isRequired
+        label: IsRequired
+        required: false
+        archivable: false
+      - name: link
+        label: Link
+        widget: object
+        fields:
+          - name: linkedProperty
+            label: LinkedProperty
+            widget: string
+            required: false
+            archivable: false
+          - name: operationId
+            label: OperationId
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: responses
+    label: Responses
+    widget: list
+    required: false
+    archivable: false
+  - name: security
+    label: Security
+    widget: list
+    fields:
+      - name: apiKeyName
+        label: ApiKeyName
+        widget: string
+        required: false
+        archivable: false
+      - name: bearerFormat
+        label: BearerFormat
+        widget: string
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: flows
+        label: Flows
+        widget: list
+        fields:
+          - name: authorizationUrl
+            label: AuthorizationUrl
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+          - name: refreshUrl
+            label: RefreshUrl
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+          - name: scopes
+            label: Scopes
+            widget: list
+            fields:
+              - name: description
+                label: Description
+                widget: markdown
+                required: false
+                archivable: false
+              - name: name
+                label: Name
+                widget: string
+                required: true
+                archivable: false
+            required: false
+            archivable: false
+          - name: tokenUrl
+            label: TokenUrl
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: string
+            options:
+              - implicit
+              - password
+              - clientCredentials
+              - authorizationCode
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: in
+        label: In
+        widget: string
+        options:
+          - query
+          - header
+          - cookie
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: openIdConnectUrl
+        label: OpenIdConnectUrl
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: scheme
+        label: Scheme
+        widget: string
+        required: false
+        archivable: false
+      - name: type
+        label: Type
+        widget: string
+        options:
+          - apiKey
+          - http
+          - openIdConnect
+          - oauth2
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: seeAlso
+    label: SeeAlso
+    widget: list
+    fields:
+      - name: href
+        label: Href
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: text
+        label: Text
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: servers
+    label: Servers
+    widget: list
+    required: false
+    archivable: false
+  - name: service
+    label: Service
+    widget: string
+    required: true
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

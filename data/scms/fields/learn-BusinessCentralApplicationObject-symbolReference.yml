@@ -1,0 +1,25 @@
+name: symbolReference
+label: SymbolReference
+widget: object
+fields:
+  - name: internalReference
+    label: InternalReference
+    widget: relation
+    required: false
+    archivable: false
+  - name: isExternal
+    label: IsExternal
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: relation
+    required: true
+    archivable: false
+required: false
+archivable: false

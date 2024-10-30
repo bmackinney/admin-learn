@@ -1,0 +1,76 @@
+name: TSTypeAlias
+label: TSTypeAlias
+description: The schema for TypeAlias page
+fields:
+  - name: customDeprecatedMessage
+    label: CustomDeprecatedMessage
+    widget: markdown
+    required: false
+    archivable: false
+  - name: fullName
+    label: FullName
+    widget: string
+    required: false
+    archivable: false
+  - name: isDeprecated
+    label: IsDeprecated
+    required: false
+    archivable: false
+  - name: isPreview
+    label: IsPreview
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: package
+    label: Package
+    widget: relation
+    required: false
+    archivable: false
+  - name: previewState
+    label: PreviewState
+    widget: string
+    options:
+      - alpha
+      - beta
+    required: false
+    archivable: false
+  - name: remarks
+    label: Remarks
+    widget: markdown
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: syntax
+    label: Syntax
+    widget: string
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

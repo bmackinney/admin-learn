@@ -1,0 +1,43 @@
+name: frequently-asked-questions
+label: Frequently-asked-questions
+widget: object
+fields:
+  - name: backgroundColor
+    label: BackgroundColor
+    required: false
+    archivable: false
+  - name: componentType
+    label: ComponentType
+    required: false
+    archivable: false
+  - name: layout
+    label: Layout
+    widget: string
+    options:
+      - horizontal
+      - vertical
+    required: false
+    archivable: false
+  - name: questions
+    label: Questions
+    widget: list
+    fields:
+      - name: answer
+        label: Answer
+        widget: markdown
+        required: false
+        archivable: false
+      - name: question
+        label: Question
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+required: false
+archivable: false

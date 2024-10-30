@@ -1,0 +1,101 @@
+name: Tutorial
+label: Tutorial
+description: The schema for Tutorial
+fields:
+  - name: challenge
+    label: Challenge
+    widget: object
+    fields:
+      - name: type
+        label: Type
+        widget: string
+        options:
+          - quiz
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: relation
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: items
+    label: Items
+    widget: list
+    fields:
+      - name: content
+        label: Content
+        widget: markdown
+        required: false
+        archivable: false
+      - name: durationInMinutes
+        label: DurationInMinutes
+        widget: number
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: labUrl
+    label: LabUrl
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: audience
+        label: Audience
+        widget: string
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: interactive
+        label: Interactive
+        widget: string
+        required: false
+        archivable: false
+      - name: level
+        label: Level
+        widget: string
+        required: false
+        archivable: false
+      - name: nextTutorialHref
+        label: NextTutorialHref
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: nextTutorialTitle
+        label: NextTutorialTitle
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: false
+    archivable: false

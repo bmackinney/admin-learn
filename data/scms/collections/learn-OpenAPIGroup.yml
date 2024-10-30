@@ -1,0 +1,58 @@
+name: OpenAPIGroup
+label: OpenAPIGroup
+description: The schema for OpenAPI Group page
+fields:
+  - name: apiVersion
+    label: ApiVersion
+    widget: string
+    required: true
+    archivable: false
+  - name: groupItems
+    label: GroupItems
+    widget: list
+    required: true
+    archivable: false
+  - name: groupType
+    label: GroupType
+    widget: string
+    options:
+      - components
+      - operations
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: service
+    label: Service
+    widget: string
+    required: true
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

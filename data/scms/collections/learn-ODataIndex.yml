@@ -1,0 +1,83 @@
+name: ODataIndex
+label: ODataIndex
+description: The schema for OData index page
+fields:
+  - name: description
+    label: Description
+    widget: markdown
+    required: false
+    archivable: false
+  - name: href_see_also
+    label: Href_see_also
+    widget: list
+    fields:
+      - name: href
+        label: Href
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: text
+        label: Text
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: in_this_section
+    label: In_this_section
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: displayName
+        label: DisplayName
+        widget: string
+        required: false
+        archivable: false
+      - name: type
+        label: Type
+        widget: relation
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: false
+    archivable: false
+  - name: xref_see_also
+    label: Xref_see_also
+    widget: list
+    required: false
+    archivable: false

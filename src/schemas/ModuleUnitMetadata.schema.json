@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Unit YAML File",
+  "$id": "/src/schemas/ModuleUnitMetadata.schema.json",
+  "type": "object",
+  "properties": {
+    "### YamlMime": {
+      "type": "string",
+      "const": "ModuleUnit",
+      "description": "Specifies to the Microsoft Learn platform the type of YAML file and metadata to expect. Must be the first line of the YAML file."
+    },
+    "uid": {
+      "type": "string",
+      "pattern": "^[a-zA-Z0-9.-]+\\.[a-zA-Z0-9.-]+$",
+      "description": "A manually generated unique ID created by the author to differentiate units within a module. Must follow the specified format."
+    },
+    "title": {
+      "type": "string",
+      "description": "The title of the unit that appears in the header, TOC, and breadcrumbs. Use sentence case only, except for the product name, which should be capitalized. Don't use a period at the end of the title."
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "Use sentence case only, except for the product name, which should be capitalized. Don't use a period at the end of the title. This value is the most important metadata for SEO."
+        },
+        "description": {
+          "type": "string",
+          "description": "A meaningful description for your unit. Use a period at the end of the description. Used in site search and sometimes on a search engine results page for improved SEO."
+        },
+        "ms.date": {
+          "type": "string",
+          "format": "date",
+          "description": "Indicates the last time the module was substantially edited or guaranteed fresh. Format: MM/DD/YYYY."
+        },
+        "author": {
+          "type": "string",
+          "description": "The author's GitHub alias. Identifies the author by GitHub ID in case there are questions about or problems with the content."
+        },
+        "ms.author": {
+          "type": "string",
+          "description": "The author's Microsoft alias, without '@microsoft.com'. Used for content reporting and BI."
+        },
+        "ms.topic": {
+          "type": "string",
+          "const": "unit",
+          "description": "Indicates Unit item. Used for BI & Content Engagement reporting."
+        }
+      },
+      "required": [
+        "title",
+        "description",
+        "ms.date",
+        "author",
+        "ms.author",
+        "ms.topic"
+      ]
+    },
+    "durationInMinutes": {
+      "type": "integer",
+      "description": "The amount of time it takes to complete the unit, in minutes. The author determines this value."
+    },
+    "content": {
+      "type": "string",
+      "description": "The source of the actual content is the unit's Markdown file. Reference the content via an `include` tag that points to the Markdown file."
+    }
+  },
+  "required": [
+    "### YamlMime",
+    "uid",
+    "title",
+    "metadata",
+    "durationInMinutes",
+    "content"
+  ]
+}

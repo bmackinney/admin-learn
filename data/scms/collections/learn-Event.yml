@@ -1,0 +1,102 @@
+name: Event
+label: Event
+description: The schema for Event
+fields:
+  - name: description
+    label: Description
+    widget: markdown
+    required: true
+    archivable: false
+  - name: endDate
+    label: EndDate
+    widget: string
+    required: true
+    archivable: false
+  - name: eventAttendanceMode
+    label: EventAttendanceMode
+    widget: string
+    options:
+      - MixedEventAttendanceMode
+      - OfflineEventAttendanceMode
+      - OnlineEventAttendanceMode
+    required: false
+    archivable: false
+  - name: eventGroup
+    label: EventGroup
+    widget: list
+    required: false
+    archivable: false
+  - name: eventStatus
+    label: EventStatus
+    widget: string
+    options:
+      - EventCancelled
+      - EventMovedOnline
+      - EventPostponed
+      - EventRescheduled
+      - EventScheduled
+    required: false
+    archivable: false
+  - name: hidden
+    label: Hidden
+    required: false
+    archivable: false
+  - name: imageUrl
+    label: ImageUrl
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: location
+    label: Location
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: true
+        archivable: false
+      - name: ms.localizationpriority
+        label: Ms.localizationpriority
+        widget: string
+        options:
+          - low
+          - medium
+          - high
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: origin
+    label: Origin
+    widget: string
+    required: false
+    archivable: false
+  - name: performer
+    label: Performer
+    required: false
+    archivable: false
+  - name: startDate
+    label: StartDate
+    widget: string
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

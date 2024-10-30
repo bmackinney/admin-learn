@@ -1,0 +1,22 @@
+name: summary-card
+label: Summary-card
+widget: list
+fields:
+  - name: summary
+    label: Summary
+    widget: string
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: url
+    label: Url
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+required: false
+archivable: false

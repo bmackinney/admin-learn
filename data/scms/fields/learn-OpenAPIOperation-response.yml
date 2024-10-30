@@ -1,0 +1,26 @@
+name: response
+label: Response
+widget: object
+fields:
+  - name: bodies
+    label: Bodies
+    widget: list
+    required: false
+    archivable: false
+  - name: description
+    label: Description
+    widget: markdown
+    required: false
+    archivable: false
+  - name: headers
+    label: Headers
+    widget: list
+    required: false
+    archivable: false
+  - name: statusCode
+    label: StatusCode
+    widget: string
+    required: false
+    archivable: false
+required: false
+archivable: false

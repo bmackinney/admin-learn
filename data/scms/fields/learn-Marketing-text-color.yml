@@ -1,0 +1,10 @@
+name: text-color
+label: Text-color
+widget: string
+options:
+  - light
+  - dark
+  - brand
+  - brand-invert
+required: false
+archivable: false

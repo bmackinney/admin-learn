@@ -1,0 +1,15 @@
+name: conditionPathname
+label: ConditionPathname
+widget: object
+fields:
+  - name: limitTo
+    label: LimitTo
+    required: false
+    archivable: false
+  - name: startsWith
+    label: StartsWith
+    widget: list
+    required: false
+    archivable: false
+required: false
+archivable: false

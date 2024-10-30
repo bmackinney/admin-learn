@@ -1,0 +1,21 @@
+name: link
+label: Link
+widget: object
+fields:
+  - name: componentType
+    label: ComponentType
+    required: false
+    archivable: false
+  - name: text
+    label: Text
+    widget: string
+    required: false
+    archivable: false
+  - name: url
+    label: Url
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+required: false
+archivable: false

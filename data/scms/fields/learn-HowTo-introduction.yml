@@ -1,0 +1,5 @@
+name: introduction
+label: Introduction
+widget: markdown
+required: true
+archivable: false

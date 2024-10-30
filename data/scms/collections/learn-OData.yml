@@ -1,0 +1,599 @@
+name: OData
+label: OData
+description: The schema for OData page
+fields:
+  - name: actions
+    label: Actions
+    widget: object
+    fields:
+      - name: action_items
+        label: Action_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: bound_entities
+    label: Bound_entities
+    widget: object
+    fields:
+      - name: bound_entity_items
+        label: Bound_entity_items
+        widget: list
+        fields:
+          - name: binding_type
+            label: Binding_type
+            widget: string
+            required: false
+            archivable: false
+          - name: entity_type
+            label: Entity_type
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: collection_valued_navigation_properties
+    label: Collection_valued_navigation_properties
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: property_items
+        label: Property_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: markdown
+            required: false
+            archivable: false
+          - name: iscollection
+            label: Iscollection
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+          - name: nullable
+            label: Nullable
+            required: false
+            archivable: false
+          - name: partner
+            label: Partner
+            widget: string
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: compositionType
+    label: CompositionType
+    widget: string
+    options:
+      - query
+      - select
+    required: false
+    archivable: false
+  - name: derived_types
+    label: Derived_types
+    widget: object
+    fields:
+      - name: derived_type_items
+        label: Derived_type_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: description
+    label: Description
+    widget: markdown
+    required: false
+    archivable: false
+  - name: entities
+    label: Entities
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: entity_items
+        label: Entity_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: displayName
+            label: DisplayName
+            widget: string
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: hasparameters
+    label: Hasparameters
+    required: false
+    archivable: false
+  - name: hasreturnvalue
+    label: Hasreturnvalue
+    required: false
+    archivable: false
+  - name: header
+    label: Header
+    widget: object
+    fields:
+      - name: base_type
+        label: Base_type
+        widget: relation
+        required: false
+        archivable: false
+      - name: customization_prefix
+        label: Customization_prefix
+        widget: string
+        required: false
+        archivable: false
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: display_name
+        label: Display_name
+        widget: string
+        required: false
+        archivable: false
+      - name: entity_set_path
+        label: Entity_set_path
+        widget: string
+        required: false
+        archivable: false
+      - name: iscomposable
+        label: Iscomposable
+        required: false
+        archivable: false
+      - name: operations_supported
+        label: Operations_supported
+        widget: list
+        required: false
+        archivable: false
+      - name: primary_key
+        label: Primary_key
+        widget: string
+        required: false
+        archivable: false
+      - name: primary_name_attribute
+        label: Primary_name_attribute
+        widget: string
+        required: false
+        archivable: false
+      - name: table_type
+        label: Table_type
+        widget: string
+        required: false
+        archivable: false
+      - name: unique_name
+        label: Unique_name
+        widget: string
+        required: false
+        archivable: false
+      - name: version
+        label: Version
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: href_see_also
+    label: Href_see_also
+    widget: list
+    fields:
+      - name: href
+        label: Href
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+      - name: text
+        label: Text
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: isbound
+    label: Isbound
+    required: false
+    archivable: false
+  - name: lookup_properties
+    label: Lookup_properties
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: property_items
+        label: Property_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+          - name: single_valued_navigation_property
+            label: Single_valued_navigation_property
+            widget: list
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: members
+    label: Members
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: member_items
+        label: Member_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+          - name: value
+            label: Value
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: false
+    archivable: false
+  - name: namespace
+    label: Namespace
+    widget: string
+    required: false
+    archivable: false
+  - name: navigation_properties
+    label: Navigation_properties
+    required: false
+    archivable: false
+  - name: operations
+    label: Operations
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: operation_items
+        label: Operation_items
+        widget: list
+        fields:
+          - name: binding_type
+            label: Binding_type
+            widget: string
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: owningsolution
+    label: Owningsolution
+    widget: relation
+    required: false
+    archivable: false
+  - name: parameters
+    label: Parameters
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: parameter_items
+        label: Parameter_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: markdown
+            required: false
+            archivable: false
+          - name: iscollection
+            label: Iscollection
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+          - name: nullable
+            label: Nullable
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: relation
+            required: false
+            archivable: false
+          - name: unicode
+            label: Unicode
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: properties
+    label: Properties
+    required: false
+    archivable: false
+  - name: remarks
+    label: Remarks
+    widget: markdown
+    required: false
+    archivable: false
+  - name: return_type
+    label: Return_type
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: iscollection
+        label: Iscollection
+        required: false
+        archivable: false
+      - name: nullable
+        label: Nullable
+        required: false
+        archivable: false
+      - name: type
+        label: Type
+        widget: relation
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: single_valued_navigation_properties
+    label: Single_valued_navigation_properties
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: property_items
+        label: Property_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: markdown
+            required: false
+            archivable: false
+          - name: iscollection
+            label: Iscollection
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+          - name: nullable
+            label: Nullable
+            required: false
+            archivable: false
+          - name: partner
+            label: Partner
+            widget: string
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: solutions
+    label: Solutions
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: solution_items
+        label: Solution_items
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: string
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: relation
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: syntax_example
+    label: Syntax_example
+    widget: string
+    required: false
+    archivable: false
+  - name: type
+    label: Type
+    widget: string
+    options:
+      - entitytype
+      - function
+      - action
+      - complextype
+      - enumtype
+      - metadataentitytype
+      - queryfunction
+      - solution
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: false
+    archivable: false
+  - name: usedby
+    label: Usedby
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: usedby_items
+        label: Usedby_items
+        widget: list
+        fields:
+          - name: name
+            label: Name
+            widget: relation
+            required: false
+            archivable: false
+          - name: used_as
+            label: Used_as
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: xref_see_also
+    label: Xref_see_also
+    widget: list
+    required: false
+    archivable: false

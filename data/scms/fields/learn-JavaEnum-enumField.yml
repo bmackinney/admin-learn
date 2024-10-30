@@ -1,0 +1,45 @@
+name: enumField
+label: EnumField
+widget: object
+fields:
+  - name: deprecatedTag
+    label: DeprecatedTag
+    widget: markdown
+    required: false
+    archivable: false
+  - name: desc
+    label: Desc
+    widget: markdown
+    required: false
+    archivable: false
+  - name: fullName
+    label: FullName
+    widget: string
+    required: true
+    archivable: false
+  - name: hasDeprecatedTag
+    label: HasDeprecatedTag
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: nameWithType
+    label: NameWithType
+    widget: string
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false
+required: false
+archivable: false

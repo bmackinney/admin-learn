@@ -1,0 +1,77 @@
+name: properties
+label: Properties
+widget: object
+fields:
+  - name: description
+    label: Description
+    widget: markdown
+    required: false
+    archivable: false
+  - name: property_items
+    label: Property_items
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: display_name
+        label: Display_name
+        widget: string
+        required: false
+        archivable: false
+      - name: inherited_from
+        label: Inherited_from
+        widget: relation
+        required: false
+        archivable: false
+      - name: iscollection
+        label: Iscollection
+        required: false
+        archivable: false
+      - name: iscomputed
+        label: Iscomputed
+        required: false
+        archivable: false
+      - name: isreadonly
+        label: Isreadonly
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: false
+        archivable: false
+      - name: nullable
+        label: Nullable
+        required: false
+        archivable: false
+      - name: options
+        label: Options
+        widget: list
+        fields:
+          - name: label
+            label: Label
+            widget: string
+            required: false
+            archivable: false
+          - name: value
+            label: Value
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: type
+        label: Type
+        widget: relation
+        required: false
+        archivable: false
+      - name: unicode
+        label: Unicode
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+required: false
+archivable: false

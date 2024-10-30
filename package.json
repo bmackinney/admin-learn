@@ -1,0 +1,42 @@
+{
+  "name": "admin-learn",
+  "version": "0.1.0",
+  "description": "Node CLI that Builds CMS pages for Microsoft Learn repositories, aligned to schemas.",
+  "main": "index.js",
+  "scripts": {
+    "enable-intellisense": "node enableIntellisense.js ../../Content/admin-learn.code-workspace",
+    "gen-admin-pages": "node repo2CMS.js ../../Content/admin-learn.code-workspace",
+    "start": "hugo server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bmackinney/admin-learn.git"
+  },
+  "keywords": [
+    "Microsoft",
+    "Docs",
+    "UI",
+    "Sveltia-CMS",
+    "static",
+    "site",
+    "CMS",
+    "hugo",
+    "jsonschema"
+  ],
+  "author": "bmackinney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bmackinney/admin-learn/issues"
+  },
+  "homepage": "https://github.com/bmackinney/admin-learn#readme",
+  "dependencies": {
+    "dot-env": "^0.0.1",
+    "glob": "^11.0.0",
+    "js-yaml": "^4.1.0",
+    "minimatch": "^10.0.1",
+    "readline": "^1.3.0"
+  },
+  "devDependencies": {
+    "generator": "file:./src"
+  }
+}

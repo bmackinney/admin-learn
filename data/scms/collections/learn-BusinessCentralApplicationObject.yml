@@ -1,0 +1,462 @@
+name: BusinessCentralApplicationObject
+label: BusinessCentralApplicationObject
+description: The schema for Business Central object page
+fields:
+  - name: alId
+    label: AlId
+    widget: string
+    required: false
+    archivable: false
+  - name: baseKind
+    label: BaseKind
+    widget: string
+    options:
+      - .NET Package
+      - Codeunit
+      - CodeUnit
+      - ControlAddIn
+      - Enum
+      - Interface
+      - Module
+      - Page
+      - PermissionSet
+      - Profile
+      - Report
+      - Table
+      - Query
+      - XmlPort
+    required: true
+    archivable: false
+  - name: commentId
+    label: CommentId
+    widget: string
+    required: false
+    archivable: false
+  - name: dotNetPackages
+    label: DotNetPackages
+    widget: list
+    fields:
+      - name: assemblies
+        label: Assemblies
+        widget: list
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: enumValues
+    label: EnumValues
+    widget: list
+    fields:
+      - name: commentId
+        label: CommentId
+        widget: string
+        required: false
+        archivable: false
+      - name: examples
+        label: Examples
+        widget: list
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: obsoletion
+        label: Obsoletion
+        required: false
+        archivable: false
+      - name: remarks
+        label: Remarks
+        widget: markdown
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: events
+    label: Events
+    widget: list
+    fields:
+      - name: commentId
+        label: CommentId
+        widget: string
+        required: false
+        archivable: false
+      - name: examples
+        label: Examples
+        widget: list
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: obsoletion
+        label: Obsoletion
+        required: false
+        archivable: false
+      - name: remarks
+        label: Remarks
+        widget: markdown
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: false
+        archivable: false
+      - name: syntax
+        label: Syntax
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: examples
+    label: Examples
+    widget: list
+    required: false
+    archivable: false
+  - name: extends
+    label: Extends
+    required: false
+    archivable: false
+  - name: fields
+    label: Fields
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: fieldType
+        label: FieldType
+        widget: string
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: obsoletion
+        label: Obsoletion
+        required: false
+        archivable: false
+      - name: type
+        label: Type
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: fqName
+    label: FqName
+    widget: string
+    required: false
+    archivable: false
+  - name: implements
+    label: Implements
+    widget: list
+    required: false
+    archivable: false
+  - name: integrationEvents
+    label: IntegrationEvents
+    widget: list
+    fields:
+      - name: commentId
+        label: CommentId
+        widget: string
+        required: false
+        archivable: false
+      - name: examples
+        label: Examples
+        widget: list
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: obsoletion
+        label: Obsoletion
+        required: false
+        archivable: false
+      - name: remarks
+        label: Remarks
+        widget: markdown
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: false
+        archivable: false
+      - name: syntax
+        label: Syntax
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: interfaces
+    label: Interfaces
+    widget: list
+    required: false
+    archivable: false
+  - name: kind
+    label: Kind
+    widget: string
+    options:
+      - .NET Package
+      - Codeunit
+      - CodeUnit
+      - ControlAddIn
+      - Module
+      - Enum
+      - Enum Extension
+      - EnumExtension
+      - Interface
+      - Page
+      - Page Customization
+      - PageCustomization
+      - Page Extension
+      - PageExtension
+      - PermissionSet
+      - PermissionSet Extension
+      - PermissionSetExtension
+      - Profile
+      - Profile Extension
+      - ProfileExtension
+      - Query
+      - Report
+      - Report Extension
+      - ReportExtension
+      - Table
+      - Table Extension
+      - TableExtension
+      - XmlPort
+    required: true
+    archivable: false
+  - name: langs
+    label: Langs
+    widget: list
+    required: false
+    archivable: false
+  - name: methods
+    label: Methods
+    widget: list
+    fields:
+      - name: commentId
+        label: CommentId
+        widget: string
+        required: false
+        archivable: false
+      - name: examples
+        label: Examples
+        widget: list
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: obsoletion
+        label: Obsoletion
+        required: false
+        archivable: false
+      - name: remarks
+        label: Remarks
+        widget: markdown
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: false
+        archivable: false
+      - name: syntax
+        label: Syntax
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: namespace
+    label: Namespace
+    widget: string
+    required: false
+    archivable: false
+  - name: objectProperties
+    label: ObjectProperties
+    widget: list
+    fields:
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: promoted
+        label: Promoted
+        required: false
+        archivable: false
+      - name: value
+        label: Value
+        widget: string
+        required: false
+        archivable: false
+      - name: xrefType
+        label: XrefType
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: obsoletion
+    label: Obsoletion
+    required: false
+    archivable: false
+  - name: parent
+    label: Parent
+    widget: string
+    required: false
+    archivable: false
+  - name: queryColumns
+    label: QueryColumns
+    widget: list
+    fields:
+      - name: columnType
+        label: ColumnType
+        required: false
+        archivable: false
+      - name: dataItem
+        label: DataItem
+        widget: string
+        required: false
+        archivable: false
+      - name: dataType
+        label: DataType
+        widget: string
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+      - name: obsoletion
+        label: Obsoletion
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: remarks
+    label: Remarks
+    widget: markdown
+    required: false
+    archivable: false
+  - name: seeAlso
+    label: SeeAlso
+    widget: list
+    required: false
+    archivable: false
+  - name: sourceTable
+    label: SourceTable
+    widget: string
+    required: false
+    archivable: false
+  - name: sourceTableType
+    label: SourceTableType
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: tableKeys
+    label: TableKeys
+    widget: list
+    fields:
+      - name: keyFields
+        label: KeyFields
+        widget: string
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: triggers
+    label: Triggers
+    widget: list
+    fields:
+      - name: description
+        label: Description
+        widget: markdown
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

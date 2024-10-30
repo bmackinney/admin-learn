@@ -1,0 +1,105 @@
+name: levelPivot
+label: LevelPivot
+widget: object
+fields:
+  - name: connectedBifold
+    label: ConnectedBifold
+    required: false
+    archivable: false
+  - name: journeySection
+    label: JourneySection
+    widget: object
+    fields:
+      - name: collections
+        label: Collections
+        widget: list
+        required: false
+        archivable: false
+      - name: componentType
+        label: ComponentType
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: level
+    label: Level
+    widget: string
+    options:
+      - advanced
+      - beginner
+      - intermediate
+    required: false
+    archivable: false
+  - name: skills
+    label: Skills
+    widget: list
+    fields:
+      - name: content
+        label: Content
+        widget: list
+        fields:
+          - name: uid
+            label: Uid
+            widget: relation
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+      - name: skill
+        label: Skill
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: summaryBifold
+    label: SummaryBifold
+    widget: object
+    fields:
+      - name: alignment
+        label: Alignment
+        widget: string
+        options:
+          - top
+          - center
+        required: false
+        archivable: false
+      - name: backgroundColor
+        label: BackgroundColor
+        required: false
+        archivable: false
+      - name: blocks
+        label: Blocks
+        widget: list
+        types:
+          - name: blocks
+            label: Blocks
+            required: false
+            archivable: false
+          - name: blocks
+            label: Blocks
+            required: false
+            archivable: false
+          - name: blocks
+            label: Blocks
+            required: false
+            archivable: false
+          - name: blocks
+            label: Blocks
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: componentType
+        label: ComponentType
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+required: false
+archivable: false

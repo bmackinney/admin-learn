@@ -1,0 +1,38 @@
+name: highlightedContentItem
+label: HighlightedContentItem
+widget: object
+fields:
+  - name: itemType
+    label: ItemType
+    widget: string
+    options:
+      - architecture
+      - concept
+      - deploy
+      - download
+      - get-started
+      - how-to-guide
+      - learn
+      - overview
+      - quickstart
+      - reference
+      - sample
+      - training
+      - tutorial
+      - whats-new
+      - video
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: url
+    label: Url
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+required: false
+archivable: false

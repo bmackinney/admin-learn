@@ -1,0 +1,10 @@
+name: background-color
+label: Background-color
+widget: string
+options:
+  - alternating-grey
+  - alternating-grey-reversed
+  - dark
+  - medium
+required: false
+archivable: false

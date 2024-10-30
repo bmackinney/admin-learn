@@ -1,0 +1,5 @@
+name: date
+label: Date
+widget: string
+required: false
+archivable: false

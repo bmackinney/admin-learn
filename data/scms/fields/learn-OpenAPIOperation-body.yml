@@ -1,0 +1,20 @@
+name: body
+label: Body
+widget: object
+fields:
+  - name: examples
+    label: Examples
+    widget: list
+    required: false
+    archivable: false
+  - name: mediaType
+    label: MediaType
+    widget: string
+    required: false
+    archivable: false
+  - name: type
+    label: Type
+    required: false
+    archivable: false
+required: false
+archivable: false

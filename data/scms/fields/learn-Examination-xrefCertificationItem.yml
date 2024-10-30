@@ -1,0 +1,11 @@
+name: xrefCertificationItem
+label: XrefCertificationItem
+widget: object
+fields:
+  - name: uid
+    label: Uid
+    widget: relation
+    required: true
+    archivable: false
+required: false
+archivable: false

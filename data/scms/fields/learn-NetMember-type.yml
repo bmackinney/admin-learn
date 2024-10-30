@@ -1,0 +1,14 @@
+name: type
+label: Type
+widget: string
+options:
+  - attachedevent
+  - attachedproperty
+  - constructor
+  - event
+  - field
+  - method
+  - operator
+  - property
+required: true
+archivable: false

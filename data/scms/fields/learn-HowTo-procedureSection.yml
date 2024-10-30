@@ -1,0 +1,5 @@
+name: procedureSection
+label: ProcedureSection
+widget: list
+required: true
+archivable: false

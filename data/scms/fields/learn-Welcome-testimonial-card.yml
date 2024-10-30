@@ -1,0 +1,31 @@
+name: testimonial-card
+label: Testimonial-card
+widget: object
+fields:
+  - name: avatarUrl
+    label: AvatarUrl
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: feedback
+    label: Feedback
+    widget: string
+    required: false
+    archivable: false
+  - name: link
+    label: Link
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: false
+    archivable: false
+  - name: role
+    label: Role
+    widget: string
+    required: false
+    archivable: false
+required: false
+archivable: false

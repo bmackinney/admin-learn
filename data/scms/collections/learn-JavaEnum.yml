@@ -1,0 +1,115 @@
+name: JavaEnum
+label: JavaEnum
+description: The schema for JavaEnum page
+fields:
+  - name: artifact
+    label: Artifact
+    widget: string
+    required: false
+    archivable: false
+  - name: deprecatedTag
+    label: DeprecatedTag
+    widget: markdown
+    required: false
+    archivable: false
+  - name: desc
+    label: Desc
+    widget: markdown
+    required: false
+    archivable: false
+  - name: fields
+    label: Fields
+    widget: list
+    required: false
+    archivable: false
+  - name: fullName
+    label: FullName
+    widget: string
+    required: true
+    archivable: false
+  - name: hasDeprecatedTag
+    label: HasDeprecatedTag
+    required: false
+    archivable: false
+  - name: implements
+    label: Implements
+    widget: list
+    required: false
+    archivable: false
+  - name: inheritances
+    label: Inheritances
+    widget: list
+    required: false
+    archivable: false
+  - name: inheritedClassMethods
+    label: InheritedClassMethods
+    widget: list
+    fields:
+      - name: classRef
+        label: ClassRef
+        widget: markdown
+        required: false
+        archivable: false
+      - name: methodsRef
+        label: MethodsRef
+        widget: list
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: inheritedMembers
+    label: InheritedMembers
+    widget: list
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: methods
+    label: Methods
+    widget: list
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: true
+    archivable: false
+  - name: nameWithType
+    label: NameWithType
+    widget: string
+    required: false
+    archivable: false
+  - name: package
+    label: Package
+    widget: relation
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: syntax
+    label: Syntax
+    widget: markdown
+    required: false
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false

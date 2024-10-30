@@ -1,0 +1,18 @@
+name: background-gradient
+label: Background-gradient
+widget: object
+fields:
+  - name: color
+    label: Color
+    widget: string
+    options:
+      - brand
+      - brand-invert
+    required: false
+    archivable: false
+  - name: componentType
+    label: ComponentType
+    required: false
+    archivable: false
+required: false
+archivable: false

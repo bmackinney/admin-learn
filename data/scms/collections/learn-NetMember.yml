@@ -1,0 +1,526 @@
+name: NetMember
+label: NetMember
+description: The schema for NetMember page for method, property, field, etc.
+fields:
+  - name: assembliesWithMoniker
+    label: AssembliesWithMoniker
+    widget: list
+    required: false
+    archivable: false
+  - name: commentId
+    label: CommentId
+    widget: string
+    required: false
+    archivable: false
+  - name: devLangs
+    label: DevLangs
+    widget: list
+    required: false
+    archivable: false
+  - name: examples
+    label: Examples
+    widget: markdown
+    required: false
+    archivable: false
+  - name: fullName
+    label: FullName
+    widget: string
+    required: true
+    archivable: false
+  - name: members
+    label: Members
+    widget: list
+    fields:
+      - name: additionalNotes
+        label: AdditionalNotes
+        widget: object
+        fields:
+          - name: caller
+            label: Caller
+            widget: markdown
+            required: false
+            archivable: false
+          - name: implementer
+            label: Implementer
+            widget: markdown
+            required: false
+            archivable: false
+          - name: inheritor
+            label: Inheritor
+            widget: markdown
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: altCompliant
+        label: AltCompliant
+        widget: relation
+        required: false
+        archivable: false
+      - name: attributeMonikers
+        label: AttributeMonikers
+        widget: list
+        required: false
+        archivable: false
+      - name: attributesWithMoniker
+        label: AttributesWithMoniker
+        widget: list
+        required: false
+        archivable: false
+      - name: capabilities
+        label: Capabilities
+        widget: list
+        required: false
+        archivable: false
+      - name: commentId
+        label: CommentId
+        widget: string
+        required: false
+        archivable: false
+      - name: crossInheritdocsUid
+        label: CrossInheritdocsUid
+        widget: relation
+        required: false
+        archivable: false
+      - name: examples
+        label: Examples
+        widget: markdown
+        required: false
+        archivable: false
+      - name: exceptions
+        label: Exceptions
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: markdown
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: markdown
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+      - name: fullName
+        label: FullName
+        widget: string
+        required: true
+        archivable: false
+      - name: implementsMonikers
+        label: ImplementsMonikers
+        widget: list
+        required: false
+        archivable: false
+      - name: implementsWithMoniker
+        label: ImplementsWithMoniker
+        widget: list
+        required: false
+        archivable: false
+      - name: isDeprecated
+        label: IsDeprecated
+        required: false
+        archivable: false
+      - name: isInternalOnly
+        label: IsInternalOnly
+        required: false
+        archivable: false
+      - name: isNotClsCompliant
+        label: IsNotClsCompliant
+        required: false
+        archivable: false
+      - name: metadata
+        label: Metadata
+        widget: object
+        fields: []
+        required: false
+        archivable: false
+      - name: monikers
+        label: Monikers
+        widget: list
+        required: false
+        archivable: false
+      - name: name
+        label: Name
+        widget: string
+        required: false
+        archivable: false
+      - name: nameWithType
+        label: NameWithType
+        widget: string
+        required: false
+        archivable: false
+      - name: obsoleteMessagesWithMoniker
+        label: ObsoleteMessagesWithMoniker
+        widget: list
+        required: false
+        archivable: false
+      - name: osRequirements
+        label: OsRequirements
+        widget: object
+        fields:
+          - name: minVersion
+            label: MinVersion
+            widget: string
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: parameters
+        label: Parameters
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: markdown
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+          - name: namesWithMoniker
+            label: NamesWithMoniker
+            widget: list
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: markdown
+            required: true
+            archivable: false
+          - name: typePerLanguage
+            label: TypePerLanguage
+            widget: list
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: permissions
+        label: Permissions
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: markdown
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: markdown
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+      - name: previewFeaturesMessagesWithMoniker
+        label: PreviewFeaturesMessagesWithMoniker
+        widget: list
+        required: false
+        archivable: false
+      - name: remarks
+        label: Remarks
+        widget: markdown
+        required: false
+        archivable: false
+      - name: returnsWithMoniker
+        label: ReturnsWithMoniker
+        widget: object
+        fields:
+          - name: description
+            label: Description
+            widget: markdown
+            required: false
+            archivable: false
+          - name: literalValue
+            label: LiteralValue
+            widget: string
+            required: false
+            archivable: false
+          - name: type
+            label: Type
+            widget: list
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+      - name: sdkRequirements
+        label: SdkRequirements
+        widget: object
+        fields:
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+          - name: url
+            label: Url
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: seeAlso
+        label: SeeAlso
+        widget: markdown
+        required: false
+        archivable: false
+      - name: source
+        label: Source
+        widget: object
+        fields:
+          - name: branch
+            label: Branch
+            widget: string
+            required: false
+            archivable: false
+          - name: path
+            label: Path
+            widget: string
+            required: false
+            archivable: false
+          - name: repo
+            label: Repo
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: sourceLinksWithMoniker
+        label: SourceLinksWithMoniker
+        widget: list
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: markdown
+        required: false
+        archivable: false
+      - name: syntaxWithMoniker
+        label: SyntaxWithMoniker
+        widget: list
+        fields:
+          - name: lang
+            label: Lang
+            widget: string
+            required: false
+            archivable: false
+          - name: values
+            label: Values
+            widget: list
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: threadSafety
+        label: ThreadSafety
+        widget: object
+        fields:
+          - name: customizedContent
+            label: CustomizedContent
+            widget: markdown
+            required: false
+            archivable: false
+          - name: isSupported
+            label: IsSupported
+            required: false
+            archivable: false
+          - name: memberScope
+            label: MemberScope
+            widget: string
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: type
+        label: Type
+        required: true
+        archivable: false
+      - name: typeParameters
+        label: TypeParameters
+        widget: list
+        fields:
+          - name: description
+            label: Description
+            widget: markdown
+            required: false
+            archivable: false
+          - name: isContravariant
+            label: IsContravariant
+            required: false
+            archivable: false
+          - name: isCovariant
+            label: IsCovariant
+            required: false
+            archivable: false
+          - name: name
+            label: Name
+            widget: string
+            required: false
+            archivable: false
+          - name: namesWithMoniker
+            label: NamesWithMoniker
+            widget: list
+            fields:
+              - name: desc
+                label: Desc
+                widget: markdown
+                required: false
+                archivable: false
+              - name: monikers
+                label: Monikers
+                widget: list
+                required: false
+                archivable: false
+              - name: value
+                label: Value
+                widget: string
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: uid
+        label: Uid
+        widget: string
+        required: false
+        archivable: false
+      - name: uwpRequirements
+        label: UwpRequirements
+        widget: object
+        fields:
+          - name: apiContracts
+            label: ApiContracts
+            widget: list
+            fields:
+              - name: name
+                label: Name
+                widget: string
+                required: false
+                archivable: false
+              - name: version
+                label: Version
+                widget: string
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+          - name: deviceFamilies
+            label: DeviceFamilies
+            widget: list
+            fields:
+              - name: name
+                label: Name
+                widget: string
+                required: false
+                archivable: false
+              - name: version
+                label: Version
+                widget: string
+                required: false
+                archivable: false
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: xamlMemberSyntax
+        label: XamlMemberSyntax
+        widget: string
+        required: false
+        archivable: false
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: monikers
+    label: Monikers
+    widget: list
+    required: false
+    archivable: false
+  - name: name
+    label: Name
+    widget: string
+    required: false
+    archivable: false
+  - name: nameWithType
+    label: NameWithType
+    widget: string
+    required: false
+    archivable: false
+  - name: namespace
+    label: Namespace
+    widget: relation
+    required: false
+    archivable: false
+  - name: packagesWithMoniker
+    label: PackagesWithMoniker
+    widget: list
+    required: false
+    archivable: false
+  - name: remarks
+    label: Remarks
+    widget: markdown
+    required: false
+    archivable: false
+  - name: seeAlso
+    label: SeeAlso
+    widget: markdown
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: markdown
+    required: false
+    archivable: false
+  - name: threadSafety
+    label: ThreadSafety
+    widget: object
+    fields:
+      - name: customizedContent
+        label: CustomizedContent
+        widget: markdown
+        required: false
+        archivable: false
+      - name: isSupported
+        label: IsSupported
+        required: false
+        archivable: false
+      - name: memberScope
+        label: MemberScope
+        widget: string
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: type
+    label: Type
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: false
+    archivable: false

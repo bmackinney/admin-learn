@@ -1,0 +1,34 @@
+name: icon-card
+label: Icon-card
+widget: object
+fields:
+  - name: componentType
+    label: ComponentType
+    required: false
+    archivable: false
+  - name: date
+    label: Date
+    required: false
+    archivable: false
+  - name: icon
+    label: Icon
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: string
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: url
+    label: Url
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+required: false
+archivable: false

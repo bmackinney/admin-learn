@@ -1,0 +1,28 @@
+name: ModuleAvailability
+label: ModuleAvailability
+description: Config file to set module sandbox and lab availability statuses
+fields:
+  - name: disableAllLabs
+    label: DisableAllLabs
+    required: true
+    archivable: false
+  - name: disableAllSandboxes
+    label: DisableAllSandboxes
+    required: true
+    archivable: false
+  - name: disabledLabs
+    label: DisabledLabs
+    widget: list
+    required: false
+    archivable: false
+  - name: disabledSandboxes
+    label: DisabledSandboxes
+    widget: list
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields: []
+    required: false
+    archivable: false

@@ -1,0 +1,27 @@
+name: navItem
+label: NavItem
+widget: object
+fields:
+  - name: href
+    label: Href
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: id
+    label: Id
+    widget: string
+    required: false
+    archivable: false
+  - name: items
+    label: Items
+    widget: list
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: false
+    archivable: false
+required: false
+archivable: false

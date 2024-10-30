@@ -1,0 +1,147 @@
+name: Directory
+label: Directory
+description: The schema for Directory Home page
+fields:
+  - name: hero
+    label: Hero
+    widget: object
+    fields:
+      - name: backgroundPattern
+        label: BackgroundPattern
+        widget: string
+        options:
+          - plus
+          - pixie-sticks
+        required: false
+        archivable: false
+      - name: componentType
+        label: ComponentType
+        required: false
+        archivable: false
+      - name: heroImage
+        label: HeroImage
+        widget: object
+        fields:
+          - name: darkImageSrc
+            label: DarkImageSrc
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+          - name: lightImageSrc
+            label: LightImageSrc
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: links
+        label: Links
+        required: false
+        archivable: false
+      - name: size
+        label: Size
+        widget: string
+        options:
+          - extra-small
+          - small
+          - large
+        required: false
+        archivable: false
+      - name: subtitle
+        label: Subtitle
+        widget: string
+        required: false
+        archivable: false
+      - name: summary
+        label: Summary
+        widget: string
+        required: false
+        archivable: false
+      - name: supertitle
+        label: Supertitle
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: listings
+    label: Listings
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: links
+        label: Links
+        widget: list
+        fields:
+          - name: text
+            label: Text
+            widget: string
+            required: false
+            archivable: false
+          - name: url
+            label: Url
+            widget: string
+            fieldType: url
+            required: false
+            archivable: false
+        required: false
+        archivable: false
+      - name: supertitle
+        label: Supertitle
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: resourcesSection
+    label: ResourcesSection
+    widget: object
+    fields:
+      - name: cards
+        label: Cards
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: true
+    archivable: false
+  - name: searchPlaceholder
+    label: SearchPlaceholder
+    widget: string
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false

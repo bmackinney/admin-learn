@@ -1,0 +1,170 @@
+name: EventSession
+label: EventSession
+description: The schema for Event Sessions
+fields:
+  - name: description
+    label: Description
+    widget: markdown
+    required: true
+    archivable: false
+  - name: endDate
+    label: EndDate
+    widget: string
+    required: true
+    archivable: false
+  - name: entryId
+    label: EntryId
+    widget: string
+    required: false
+    archivable: false
+  - name: eventUid
+    label: EventUid
+    widget: relation
+    required: true
+    archivable: false
+  - name: externalVideoUrl
+    label: ExternalVideoUrl
+    widget: string
+    fieldType: url
+    required: false
+    archivable: false
+  - name: hidden
+    label: Hidden
+    required: false
+    archivable: false
+  - name: languages
+    label: Languages
+    widget: list
+    required: false
+    archivable: false
+  - name: levels
+    label: Levels
+    widget: list
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: ms.localizationpriority
+        label: Ms.localizationpriority
+        widget: string
+        options:
+          - low
+          - medium
+          - high
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: origin
+    label: Origin
+    widget: string
+    required: false
+    archivable: false
+  - name: presentedLocale
+    label: PresentedLocale
+    widget: string
+    options:
+      - ar
+      - bg
+      - bs-cyrl
+      - bs-latn
+      - ca
+      - cs
+      - da
+      - de
+      - el
+      - en
+      - es
+      - et
+      - eu
+      - fi
+      - fil
+      - fr
+      - ga
+      - gl
+      - he
+      - hi
+      - hr
+      - hu
+      - id
+      - is
+      - it
+      - ja
+      - kk
+      - ko
+      - lb
+      - lt
+      - lv
+      - ms
+      - mt
+      - nl
+      - nb
+      - pl
+      - pt-br
+      - pt-pt
+      - ro
+      - ru
+      - sk
+      - sl
+      - sr-cyrl
+      - sr-latn
+      - sv
+      - th
+      - tr
+      - uk
+      - ur
+      - vi
+      - zh-cn
+      - zh-hk
+      - zh-tw
+    required: true
+    archivable: false
+  - name: presenters
+    label: Presenters
+    widget: list
+    fields:
+      - name: displayName
+        label: DisplayName
+        widget: string
+        required: false
+        archivable: false
+      - name: href
+        label: Href
+        widget: string
+        fieldType: url
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: products
+    label: Products
+    widget: list
+    required: false
+    archivable: false
+  - name: roles
+    label: Roles
+    widget: list
+    required: false
+    archivable: false
+  - name: startDate
+    label: StartDate
+    widget: string
+    required: true
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: uid
+    label: Uid
+    widget: string
+    required: true
+    archivable: false
+  - name: uploadDate
+    label: UploadDate
+    widget: string
+    required: true
+    archivable: false

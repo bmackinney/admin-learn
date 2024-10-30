@@ -1,0 +1,124 @@
+name: Hub
+label: Hub
+description: The schema for the New Hub Pages
+fields:
+  - name: additionalContent
+    label: AdditionalContent
+    widget: object
+    fields:
+      - name: footer
+        label: Footer
+        widget: markdown
+        required: false
+        archivable: false
+      - name: sections
+        label: Sections
+        widget: list
+        fields:
+          - name: items
+            label: Items
+            required: false
+            archivable: false
+          - name: summary
+            label: Summary
+            widget: string
+            required: false
+            archivable: false
+          - name: title
+            label: Title
+            widget: string
+            required: true
+            archivable: false
+        required: false
+        archivable: false
+    required: false
+    archivable: false
+  - name: brand
+    label: Brand
+    widget: string
+    options:
+      - aspnet
+      - azure
+      - dotnet
+      - dynamics
+      - fabric
+      - m365
+      - ms-graph
+      - nuget
+      - office
+      - playfab
+      - power-apps
+      - power-automate
+      - power-bi
+      - power-pages
+      - power-platform
+      - power-virtual-agents
+      - project
+      - sales-copilot
+      - semantic-kernel
+      - sharepoint
+      - sql
+      - sql-server
+      - teams
+      - vs
+      - visual-studio
+      - windows
+      - workplace-analytics
+      - xamarin
+      - xbox
+    required: false
+    archivable: false
+  - name: conceptualContent
+    label: ConceptualContent
+    required: false
+    archivable: false
+  - name: documentTitle
+    label: DocumentTitle
+    widget: string
+    required: false
+    archivable: false
+  - name: highlightedContent
+    label: HighlightedContent
+    required: false
+    archivable: false
+  - name: metadata
+    label: Metadata
+    widget: object
+    fields:
+      - name: description
+        label: Description
+        widget: string
+        required: false
+        archivable: false
+      - name: title
+        label: Title
+        widget: string
+        required: true
+        archivable: false
+    required: false
+    archivable: false
+  - name: pageModifier
+    label: PageModifier
+    widget: string
+    options:
+      - qna-home
+    required: false
+    archivable: false
+  - name: productDirectory
+    label: ProductDirectory
+    required: false
+    archivable: false
+  - name: summary
+    label: Summary
+    widget: string
+    required: false
+    archivable: false
+  - name: title
+    label: Title
+    widget: string
+    required: true
+    archivable: false
+  - name: tools
+    label: Tools
+    required: false
+    archivable: false
