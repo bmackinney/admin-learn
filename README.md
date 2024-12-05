@@ -17,13 +17,6 @@ A content project planning tool generates ADO bulk work item uploads.
 1. npm execute
 1. Edit your content
 
-## About me 
-
-I'm [Brian MacKinney](https://github.com/bmackinney), a vendor on the partnerships/partner-enablement team. I have a M.Ed. in Ed Tech, and over a decade of experience with static documentation sites. This is the problem I've been dreaming of for a long time. I look at performance problems as most likely to be an issue with tools, incentives, and systems. Training and documentation are appropriate too, given the rest of the system follows DRY and first principles. This project reflects that my understanding that for my varying-product work needs better tools and a tighter system, and that I am most capable of selecting and building them for myself if necessary. My experience and witness to content development projects here lead me to believe it is necessary. The time-bound nature of my engagement leads me to believe it is only possible by just doing it myself. Whether it sticks and lands me here permanently is my goal but not my motivation. 
-
-## 10/28/2024
-The package does a lot 
-
 ## Vision
 
 admin-learn, git, and ADO are the only software you need to effectively manage, develop, and execute content portfolios on Microsoft Learn. The project stores schema.json-derived forms, and a variety of CMS for targeted editing of each repository, enabling every contributor to learn to quickly and accurately create and edit any type of learn content from the browser, saved to the source .yml and .md files in local repositories. It generates .csv files for bulk work item upload to ADO, complete with instructions and links to guidance, assignment from values in plan.yml
